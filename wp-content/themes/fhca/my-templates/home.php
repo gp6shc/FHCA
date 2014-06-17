@@ -52,4 +52,75 @@ get_header(); ?>
 		</main> #main 
 	</div> #primary -->
 
+    <div class="img-holder" data-image="<?php bloginfo('stylesheet_directory') ?>/img/autumn_season-1600x900.jpg" data-width="1600" data-height="900">
+	<div class="surface" id="block-1">
+	    <h1>60 YEARS <br/> OF CARING</h1>
+	    	<p>Xeriberibusae et as esequo blabore pudae. Ut laboreperum hit quunt dolumet, test, soloreribus, que pel ius voluptatur arum Xeriberibusae et as esequo blabore pudae.</p>
+	    <button>See Stories</button></div>
+	</div>
+	</div>
+
+    <section>
+        <p>Death rates from falls have risen sharply over the past 10 years, becoming the leading cause of fatal and nonfatal injuries among older adults.</p>
+    </section>
+
+    <div class="img-holder" data-image="<?php bloginfo('stylesheet_directory') ?>/img/japan_digital_nature-1680x1050.jpg" data-cover-ratio="0.75" data-width="1680" data-height="1050">
+   	<div class="surface" id="block-2">
+	    <h1>60 YEARS <br/> OF CARING</h1>
+	    	<p>Xeriberibusae et as esequo blabore pudae. Ut laboreperum hit quunt dolumet, test, soloreribus, que pel ius voluptatur arum Xeriberibusae et as esequo blabore pudae.</p>
+	    <button>See Stories</button></div>
+	</div>
+	</div>
+
+    <section>
+        <p>But even as pension plans and the birth of Social Security began pumping dollars into the aging care system in the mid-1960s, nursing home environments struggled.</p>
+    </section>
+
+    <div class="img-holder" data-image="<?php bloginfo('stylesheet_directory') ?>/img/german_landscapes-1600x900.jpg">
+	<div class="surface" id="block-3">
+	    <h1>60 YEARS <br/> OF CARING</h1>
+	    	<p>Xeriberibusae et as esequo blabore pudae. Ut laboreperum hit quunt dolumet, test, soloreribus, que pel ius voluptatur arum Xeriberibusae et as esequo blabore pudae.</p>
+	    <button>See Stories</button></div>
+	    
+    </div>
+	</div>
+    <section>
+        <h2>Aging and Technology</h2>
+			<ul>
+				<li>In 2010, 2.3 million seniors were treated in a hospital emergency department following a fall, and 21,700 died of injuries sustained in a fall.</li>
+				<li>Residents of assisted living or skilled nursing facilities are double as likely to fall as those living independently. Residents of assisted living or skilled nursing facilities are double as likely to fall as those living independently.</li>
+			</ul>
+    </section>
+    <div>
+    	<h2>Where to turn for more info:</h2>
+		
+		<h4>Falls Among Older Adults: An Overview</h4>
+		<p>(The Centers for Disease Control and Prevention)</p>
+		
+		<h4>Simple Tips to Prevent Falls</h4>
+		<p>(Mayo Clinic)</p>
+		
+		<h4>The Latest in Falls Prevention</h4>
+		<p>(National Council on Aging)</p>
+    </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="<?php bloginfo('stylesheet_directory') ?>/js/jquery.imageScroll.min.js"></script>
+    <script>
+        $('.img-holder').imageScroll({
+//            image: null,
+//            imageAttribute: 'image',
+            container: $('body'),
+            speed: 0.65,
+            coverRatio: 0.75,
+            holderClass: 'img-holder',
+//            holderMinHeight: 200,
+//            extraHeight: 0,
+//            mediaWidth: 1600,
+//            mediaHeight: 900,
+            parallax: true,
+//            touch: false
+        });
+    </script>
+
 <?php get_footer(); ?>

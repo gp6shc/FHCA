@@ -6,6 +6,9 @@ $blue: #23316f;
 $darkblue: #192259;
 $darktext: #9590ad;
 
+$headerfont: 'PT Sans', sans-serif;
+$bodyfont: 'Crimson Text', serif;
+
 
 header {
 	width: 100%;
@@ -15,7 +18,8 @@ header {
 
 .site-branding {
 	float: left;
-	color: white;	
+	color: white;
+	height: 84px;	
 }
 
 #super-nav {
@@ -70,6 +74,7 @@ nav {
 		display: inline-block;
 		list-style-type: none;
 		padding: 0 20px;
+		font-family: $headerfont;
 		font-size: 26px;
 		font-weight: bold;
 		line-height: 84px;
@@ -79,7 +84,147 @@ nav {
 		text-decoration: none;
 				
 		&:visited {
-					color: white;
+				color: white;
 		}
 	}
 }
+
+body {
+	background-color: $blue;
+	color: white;
+	min-width: 768px;
+}
+
+h1 {
+	font-family: $headerfont;
+	font-weight: 700;
+	font-size: 64px;
+}
+
+h2 {
+	font-family: $headerfont;
+	
+}
+
+h3 {
+	font-family: $headerfont;
+	
+}
+
+h4 {
+	font-family: $headerfont;
+	
+}
+
+h5 {
+	font-family: $headerfont;
+	
+}
+
+h6 {
+	font-family: $headerfont;
+	
+}
+
+button {
+	font-family: $headerfont;
+	
+}
+p {
+	font-family: $bodyfont;
+	
+}
+
+
+.surface {
+	transform: translateZ(1px);
+	position: absolute;
+	left: 10%;
+	top: 15%;	
+	
+	h1 {
+		color: $blue;
+		line-height: 100%;
+		margin: 0;
+	}
+	p {
+		width: 360px;
+		color: black;
+		font-size: 22px;
+		margin: 7px;
+	}
+	button {
+		border: none;
+		background-color: $blue;
+		width: 200px;
+		height: 56px;
+		margin-top: 10px;
+		border-radius: 10px;
+		font-size: 24px;
+		font-weight: bold;
+		
+		&:hover {
+			background-color: $darkblue;
+			
+		}
+		&:active {
+			background-color: $darkblue;
+		}
+	}
+}
+
+#block-2 {
+	left: 70%;
+	
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+}
+
+#block-3 {
+	
+	h1 {
+		color: white;
+	}
+	p {
+		color: white;
+	}
+}
+
+section {
+	
+	p {
+		font-size: 28px;
+		margin: 45px 27%;
+		text-align: center;
+	}
+}
+
+
+footer {
+	width: 80%;
+	color: white;
+	margin: 0 auto;
+	
+	div {
+		display: flex;
+		justify-content: space-around;
+		-webkit-flex-flow: row wrap;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+	
+		li {
+			width: 204px;
+		}
+	}
+}
+
+
+
+
+

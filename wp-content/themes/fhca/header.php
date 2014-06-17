@@ -9,6 +9,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
 <title><?php wp_title(); ?></title>
 
 <?php wp_head(); ?>
@@ -33,7 +34,7 @@
 		</div>
 		
 		<div class="site-branding">
-			<img src"" alt="Florida Health Care Assocition">
+			<img src="<?php bloginfo('stylesheet_directory')?>/img/fhca_logo.svg" alt="Florida Health Care Assocition">
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

@@ -74,8 +74,7 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background: transparent;
-  padding: 0; }
+  background: transparent; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -372,7 +371,8 @@ header {
 
 .site-branding {
   float: left;
-  color: white; }
+  color: white;
+  height: 84px; }
 
 #super-nav {
   width: 100%;
@@ -413,6 +413,7 @@ nav li {
   display: inline-block;
   list-style-type: none;
   padding: 0 20px;
+  font-family: "PT Sans", sans-serif;
   font-size: 26px;
   font-weight: bold;
   line-height: 84px; }
@@ -421,3 +422,101 @@ nav a {
   text-decoration: none; }
   nav a:visited {
     color: white; }
+
+body {
+  background-color: #23316f;
+  color: white;
+  min-width: 768px; }
+
+h1 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px; }
+
+h2 {
+  font-family: "PT Sans", sans-serif; }
+
+h3 {
+  font-family: "PT Sans", sans-serif; }
+
+h4 {
+  font-family: "PT Sans", sans-serif; }
+
+h5 {
+  font-family: "PT Sans", sans-serif; }
+
+h6 {
+  font-family: "PT Sans", sans-serif; }
+
+button {
+  font-family: "PT Sans", sans-serif; }
+
+p {
+  font-family: "Crimson Text", serif; }
+
+.surface {
+  -webkit-transform: translateZ(1px);
+  -ms-transform: translateZ(1px);
+  transform: translateZ(1px);
+  position: absolute;
+  left: 10%;
+  top: 15%; }
+  .surface h1 {
+    color: #23316f;
+    line-height: 100%;
+    margin: 0; }
+  .surface p {
+    width: 360px;
+    color: black;
+    font-size: 22px;
+    margin: 7px; }
+  .surface button {
+    border: none;
+    background-color: #23316f;
+    width: 200px;
+    height: 56px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold; }
+    .surface button:hover {
+      background-color: #192259; }
+    .surface button:active {
+      background-color: #192259; }
+
+#block-2 {
+  left: 70%; }
+  #block-2 h1 {
+    color: white; }
+  #block-2 p {
+    color: white; }
+
+#block-3 h1 {
+  color: white; }
+#block-3 p {
+  color: white; }
+
+section p {
+  font-size: 28px;
+  margin: 45px 27%;
+  text-align: center; }
+
+footer {
+  width: 80%;
+  color: white;
+  margin: 0 auto; }
+  footer div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-flow: row wrap; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
+    footer ul li {
+      width: 204px; }

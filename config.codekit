@@ -4160,6 +4160,39 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/fhca\/img\/autumn_season-1600x900.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 789857,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/autumn_season-1600x900.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/autumn_season-1600x900.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/fhca\/img\/german_landscapes-1600x900.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 338297,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/german_landscapes-1600x900.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/german_landscapes-1600x900.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/fhca\/img\/japan_digital_nature-1680x1050.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 498335,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/japan_digital_nature-1680x1050.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/japan_digital_nature-1680x1050.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/fhca\/inc\/custom-header.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4222,6 +4255,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/fhca\/js\/jquery.imageScroll.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/js\/jquery.imageScroll.min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/js\/min\/jquery.imageScroll.min-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/wp-content\/themes\/fhca\/layouts\/content-sidebar.css": {
 		"fileType": 16,
