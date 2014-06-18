@@ -1,9 +1,5 @@
 <?php
-/**
- * The template for displaying the footer.
- *
- * Contains the closing of the #content div and all content after
- *
+/*
  * @package FHCA
  */
 ?>
@@ -21,7 +17,8 @@
 				<li>Common Aging Issues</li>
 			</ul>
 			<ul>
-				<li><h5>Balance</h5></li>
+				<li><h5>Aging Issues</h5></li>
+				<li>Balance</li>
 				<li>Depression</li>
 				<li>Driving</li>
 				<li>Hearing</li>
