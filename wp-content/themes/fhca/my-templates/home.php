@@ -18,6 +18,7 @@ get_header(); ?>
 			<p>I find your lack of faith disturbing.<br /><i>Darth Vader</i></p>
 			<p>I care deeply for nature.<br /><i>Anonymous</i></p>
 			<p>I'm allergic to bee stings. They cause me to, uh, die.<br /><i>Smithers</i></p>
+			<i class="fa fa-apple fa-5x fa-spin"></i>
 			</div>
 		</main> 
 	</div>

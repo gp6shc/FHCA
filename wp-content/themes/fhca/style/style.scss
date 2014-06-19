@@ -146,7 +146,6 @@ nav {
 
 .sub-nav {
 	margin-top: -25px;
-	padding: 12px;
 	font-family: $headerfont;
 	font-size: 20px;
 	font-weight: 400;
@@ -209,8 +208,13 @@ nav {
 body {
 	background-color: $blue;
 	color: white;
-	min-width: 768px;
 	zoom: 1;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 	
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -238,7 +242,7 @@ h4 {
 }
 
 h5 {
-	
+	font-size: 24px;
 }
 
 h6 {
@@ -254,6 +258,13 @@ p {
 	color: black;
 }
 
+.fa {
+	color: black;
+}
+
+
+
+//======== FOOTER STYLE ========//
 
 footer {
 	width: 100%;
@@ -269,10 +280,13 @@ footer {
 	}
 	ul {
 		list-style: none;
-		padding: 0;
+		padding: 0 10px;
+		width: 210px;
 	
 		li {
-			width: 204px;
+			padding: 3px 0;
+			font-family: $headerfont;
+			font-size: 20px;
 		}
 	}
 }

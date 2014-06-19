@@ -154,7 +154,7 @@ nav:hover .main-nav { opacity: 0.5; }
 .main-nav ul { padding: 0; position: absolute; }
 .main-nav li { list-style-type: none; }
 
-.sub-nav { margin-top: -25px; padding: 12px; font-family: "PT Sans", sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; opacity: 0; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+.sub-nav { margin-top: -25px; font-family: "PT Sans", sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; opacity: 0; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
 .sub-nav li { padding: 3px 0; }
 
 #elder-care:hover { opacity: 1; }
@@ -169,17 +169,23 @@ nav:hover .main-nav { opacity: 0.5; }
 #stories:hover { opacity: 1; }
 #stories:hover .sub-nav { opacity: 1; }
 
-body { background-color: #21376e; color: white; min-width: 768px; zoom: 1; }
+body { background-color: #21376e; color: white; zoom: 1; }
+
+hr { border: 0; height: 1px; background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
 
 h1, h2, h3, h4, h5, h6 { font-family: "PT Sans", sans-serif; margin: 0; }
 
 h1 { font-weight: 700; font-size: 64px; color: #21376e; }
 
+h5 { font-size: 24px; }
+
 button { font-family: "PT Sans", sans-serif; }
 
 p { font-family: "Crimson Text", serif; color: black; }
 
+.fa { color: black; }
+
 footer { width: 100%; background-color: #142858; color: white; }
 footer div { width: 80%; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-flow: row wrap; }
-footer ul { list-style: none; padding: 0; }
-footer ul li { width: 204px; }
+footer ul { list-style: none; padding: 0 10px; width: 210px; }
+footer ul li { padding: 3px 0; font-family: "PT Sans", sans-serif; font-size: 20px; }

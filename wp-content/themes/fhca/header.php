@@ -10,6 +10,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 <title><?php wp_title(); ?></title>
 
 <?php wp_head(); ?>
@@ -90,8 +91,8 @@
 				<ul class="main-nav" id="stories">
 				    <li><a href="<?php echo home_url(); ?>/stories">Stories</a>
 				    	<ul class="sub-nav">
-				    		<li>Elder Care Testimonials</li>
-							<li>Submit Your Story</li>
+				    		<li>Elder Care</li>
+							<li>Submit</li>
 						</ul>
 				    </li>
 						

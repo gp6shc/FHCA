@@ -44,7 +44,7 @@
 			</ul>
 			<ul>
 				<li><h5>Stories</h5><li>
-				<li>Elder Care Testimonials</li>
+				<li>Elder Care Stories</li>
 				<li>Submit Your Story</li>
 			</ul>
 		</div>		
