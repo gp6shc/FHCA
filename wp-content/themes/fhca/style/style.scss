@@ -6,7 +6,7 @@ $blue: #21376E;
 $darkblue: #142858;
 $darktext: #ccc;
 
-$headerfont: 'PT Sans', sans-serif;
+$titlefont: 'PT Sans', sans-serif;
 $bodyfont: 'Crimson Text', serif;
 
 //======== HEADER STYLE ========//
@@ -99,13 +99,14 @@ header[role="banner"] {
 
 nav {
 	margin-right: 20px;
+	
 	height: 104px;
 	width: auto;
 	float: right;
 	transition: height 0.4s ease;
 	
 	&:hover {
-		height: 380px;
+		height: 401px;
 		
 		.main-nav {
 			opacity: 0.5;
@@ -118,7 +119,7 @@ nav {
 	padding: 0 25px 0 0;
 	margin: 0;
 	opacity: 1;
-	transition: opacity 0.2s ease;
+	transition: opacity 0.2s ease-in;
 		
 	a {
 	    display: block;
@@ -146,17 +147,23 @@ nav {
 
 .sub-nav {
 	margin-top: -25px;
-	font-family: $headerfont;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 20px;
 	opacity: 0;
 	transition: opacity 0.2s ease;
 	
 	li {
 		padding: 3px 0;
+		color: white;
 	}
 	
+	a {
+	    font-family: $titlefont;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 20px;
+	    &:visited {
+	    	color: white;
+	    }
+	}
 }	
 
 #elder-care {
@@ -203,11 +210,66 @@ nav {
 	}
 }
 
+//======== GENERIC PAGE STYLE ========//
+
+.title {
+	width: 100%;
+	min-height: 260px;
+	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(246,252,255,1) 32%, rgba(211,239,254,1) 51%, rgba(161,206,242,1) 74%, rgba(119,179,231,1) 85%, rgba(78,148,219,1) 99%, rgba(78,148,219,1) 100%);
+	text-align: center;
+	line-height: 260px;
+	
+}
+
+.page-nav {
+	width: 100%;
+	min-height: 60px;
+	background-color: #91B1DD;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	-webkit-flex-flow: row wrap;
+	
+	li {
+		height: 60px;
+		padding: 0 10px;
+		list-style-type: none;
+	}
+	
+	a {
+		display: block;
+		line-height: 60px;
+		color: white;
+		font-family: $titlefont;
+		font-weight: 400;
+		font-size: 20px;
+		text-decoration: none;
+		
+		&:hover {
+			color: $darkblue;
+		}
+	}
+	
+	.current_page_item {
+		background-color: white;
+		
+		a {
+			color: $darkblue;
+			font-weight: 700;
+			
+		}
+	}
+}
+#primary {
+	width: 80%;
+	margin: 0 auto;
+}
+
 //======== GLOBAL TAG SELECTORS ========//
 
 body {
-	background-color: $blue;
-	color: white;
+	background-color: white;
+	color: black;
 	zoom: 1;
 }
 
@@ -218,14 +280,15 @@ hr {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: $headerfont;
+	font-family: $titlefont;
 	margin: 0;
 }
 
 h1 {
+	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 64px;
-	color: $blue;
+	font-size: 72px;
+	color: $darkblue;
 }
 
 h2 {
@@ -250,7 +313,7 @@ h6 {
 }
 
 button {
-	font-family: $headerfont;
+	font-family: $titlefont;
 	
 }
 p {
@@ -258,11 +321,17 @@ p {
 	color: black;
 }
 
+//======== FONT AWESOME ========//
+
 .fa {
 	color: black;
 }
 
+//======== WP ADMIN STYLE ========//
 
+.entry-footer {
+	background: white;
+}
 
 //======== FOOTER STYLE ========//
 
@@ -282,12 +351,20 @@ footer {
 		list-style: none;
 		padding: 0 10px;
 		width: 210px;
-	
+		
 		li {
 			padding: 3px 0;
-			font-family: $headerfont;
+			font-family: $titlefont;
 			font-size: 20px;
+			opacity: 1;
+
 		}
+		
+		a {
+			text-decoration: none;
+			color: white;
+			
+		}	
 	}
 }
 

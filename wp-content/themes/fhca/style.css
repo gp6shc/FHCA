@@ -145,17 +145,19 @@ header[role="banner"] { width: 100%; background-color: #21376e; min-height: 150p
 .site-branding { float: left; color: white; height: 74px; width: auto; margin: 15px 40px; }
 
 nav { margin-right: 20px; height: 104px; width: auto; float: right; -webkit-transition: height 0.4s ease; transition: height 0.4s ease; }
-nav:hover { height: 380px; }
+nav:hover { height: 401px; }
 nav:hover .main-nav { opacity: 0.5; }
 
-.main-nav { float: left; padding: 0 25px 0 0; margin: 0; opacity: 1; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+.main-nav { float: left; padding: 0 25px 0 0; margin: 0; opacity: 1; -webkit-transition: opacity 0.2s ease-in; transition: opacity 0.2s ease-in; }
 .main-nav a { display: block; padding: 0; font-size: 26px; font-weight: 700; line-height: 104px; color: white; text-decoration: none; }
 .main-nav a:visited { color: white; }
 .main-nav ul { padding: 0; position: absolute; }
 .main-nav li { list-style-type: none; }
 
-.sub-nav { margin-top: -25px; font-family: "PT Sans", sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; opacity: 0; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
-.sub-nav li { padding: 3px 0; }
+.sub-nav { margin-top: -25px; opacity: 0; -webkit-transition: opacity 0.2s ease; transition: opacity 0.2s ease; }
+.sub-nav li { padding: 3px 0; color: white; }
+.sub-nav a { font-family: "PT Sans", sans-serif; font-size: 20px; font-weight: 400; line-height: 20px; }
+.sub-nav a:visited { color: white; }
 
 #elder-care:hover { opacity: 1; }
 #elder-care:hover .sub-nav { opacity: 1; }
@@ -169,13 +171,24 @@ nav:hover .main-nav { opacity: 0.5; }
 #stories:hover { opacity: 1; }
 #stories:hover .sub-nav { opacity: 1; }
 
-body { background-color: #21376e; color: white; zoom: 1; }
+.title { width: 100%; min-height: 260px; background: -webkit-linear-gradient(45deg, white 0%, white 18%, #f6fcff 32%, #d3effe 51%, #a1cef2 74%, #77b3e7 85%, #4e94db 99%, #4e94db 100%); background: linear-gradient(45deg, white 0%, white 18%, #f6fcff 32%, #d3effe 51%, #a1cef2 74%, #77b3e7 85%, #4e94db 99%, #4e94db 100%); text-align: center; line-height: 260px; }
+
+.page-nav { width: 100%; min-height: 60px; background-color: #91B1DD; overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -webkit-justify-content: center; -moz-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-flex-flow: row wrap; }
+.page-nav li { height: 60px; padding: 0 10px; list-style-type: none; }
+.page-nav a { display: block; line-height: 60px; color: white; font-family: "PT Sans", sans-serif; font-weight: 400; font-size: 20px; text-decoration: none; }
+.page-nav a:hover { color: #142858; }
+.page-nav .current_page_item { background-color: white; }
+.page-nav .current_page_item a { color: #142858; font-weight: 700; }
+
+#primary { width: 80%; margin: 0 auto; }
+
+body { background-color: white; color: black; zoom: 1; }
 
 hr { border: 0; height: 1px; background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0))); background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); background-image: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0)); }
 
 h1, h2, h3, h4, h5, h6 { font-family: "PT Sans", sans-serif; margin: 0; }
 
-h1 { font-weight: 700; font-size: 64px; color: #21376e; }
+h1 { text-transform: uppercase; font-weight: 700; font-size: 72px; color: #142858; }
 
 h5 { font-size: 24px; }
 
@@ -185,7 +198,10 @@ p { font-family: "Crimson Text", serif; color: black; }
 
 .fa { color: black; }
 
+.entry-footer { background: white; }
+
 footer { width: 100%; background-color: #142858; color: white; }
 footer div { width: 80%; margin: 0 auto; display: -webkit-box; display: -webkit-flex; display: -moz-box; display: -ms-flexbox; display: flex; -webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around; -webkit-flex-flow: row wrap; }
 footer ul { list-style: none; padding: 0 10px; width: 210px; }
-footer ul li { padding: 3px 0; font-family: "PT Sans", sans-serif; font-size: 20px; }
+footer ul li { padding: 3px 0; font-family: "PT Sans", sans-serif; font-size: 20px; opacity: 1; }
+footer ul a { text-decoration: none; color: white; }
