@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'fhca' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h2 style="margin: 25px 0 25px -25px;"><?php printf( __( 'Searching for: %s', 'fhca' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -27,10 +27,8 @@ get_header(); ?>
 				 */
 				get_template_part( 'content', 'search' );
 				?>
-
-			<?php endwhile; ?>
-
-			<?php fhca_paging_nav(); ?>
+				<hr>
+			<?php endwhile;  ?>
 
 		<?php else : ?>
 
@@ -41,5 +39,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

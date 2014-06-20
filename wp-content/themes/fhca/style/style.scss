@@ -2,6 +2,7 @@
 
 // ======== VARIABLES ======== //
 
+$lightblue: #91B1DD;
 $blue: #21376E;
 $darkblue: #142858;
 $darktext: #ccc;
@@ -9,30 +10,102 @@ $darktext: #ccc;
 $titlefont: 'PT Sans', sans-serif;
 $bodyfont: 'Crimson Text', serif;
 
+//======== GLOBAL TAG SELECTORS ========//
+
+body {
+	background-color: white;
+	color: black;
+}
+
+hr {
+	border: 0;
+    height: 3px;
+    background-image: linear-gradient(left, rgba(111,111,111,0), rgba(111,111,111,0.75), rgba(111,111,111,0)); 	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $titlefont;
+	margin: 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 72px;
+	color: $darkblue;
+}
+
+h2 {
+	
+	
+}
+
+h3 {
+	
+}
+
+h4 {
+	
+}
+
+h5 {
+	font-size: 24px;
+}
+
+h6 {
+	
+}
+
+button {
+	font-family: $titlefont;
+	
+}
+
+p {
+	font-family: $bodyfont;
+	font-size: 20px;
+	color: black;
+}
+
+a {
+	color: $blue;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+		
+	}
+	
+	&:visited {
+		color: $blue;
+	}
+}
+
 //======== HEADER STYLE ========//
 
 #header-wrapper {
 	position: relative;
-	width: 100%;
 	height: 150px;
+	z-index: 10;
 }
 
 header[role="banner"] {
-	width: 100%;
 	background-color: $blue;
+	width: 100%;
 	min-height: 150px;
 	position: absolute;
 	overflow: hidden;
 }
 
 #super-nav {
+	position: relative;
 	width: 100%;
 	height: 46px;
 	background-color: $darkblue;
 	
 	ul {
 		float: right;
-		margin: 0 25px;
+		margin: 0 40px 0 0;
 		height: 30px;
 		padding: 8px 0;
 	}
@@ -47,7 +120,11 @@ header[role="banner"] {
 	a {
 		color: $darktext;
 		text-decoration: none;
-				
+		
+		&:hover {
+			color: white;
+		}		
+		
 		&:visited {
 			color: $darktext;
 		}
@@ -91,22 +168,22 @@ header[role="banner"] {
 	color: white;
 	height: 74px;
 	width: auto;	
-	margin: 15px 40px;
+	margin: 15px 0 0 45px;
 }
 
 
 //======== NAVIGATION STYLE ========//
 
 nav {
-	margin-right: 20px;
-	
 	height: 104px;
 	width: auto;
+	padding-right: 45px;
 	float: right;
-	transition: height 0.4s ease;
+	overflow: hidden;
+	transition: min-height 0.4s ease;
 	
 	&:hover {
-		height: 401px;
+		min-height: 401px;
 		
 		.main-nav {
 			opacity: 0.5;
@@ -116,7 +193,6 @@ nav {
 
 .main-nav {
 	float: left;
-	padding: 0 25px 0 0;
 	margin: 0;
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
@@ -160,46 +236,18 @@ nav {
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 20px;
+	    
+	    &:hover {
+		    text-decoration: underline;
+	    }
+	    
 	    &:visited {
 	    	color: white;
 	    }
 	}
 }	
 
-#elder-care {
-
-		&:hover {
-			opacity: 1;	
-		
-			.sub-nav {
-				opacity: 1;
-		} 
-	}
-}
-
-#aging {
-
-		&:hover {
-			opacity: 1;	
-		
-			.sub-nav {
-				opacity: 1;
-		} 
-	}
-}
-
-#care-options {
-
-		&:hover {
-			opacity: 1;	
-		
-			.sub-nav {
-				opacity: 1;
-		} 
-	}
-}
-
-#stories {
+#elder-care, #aging, #care-options, #stories {
 
 		&:hover {
 			opacity: 1;	
@@ -224,7 +272,7 @@ nav {
 .page-nav {
 	width: 100%;
 	min-height: 60px;
-	background-color: #91B1DD;
+	background-color: $lightblue;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -260,67 +308,32 @@ nav {
 		}
 	}
 }
+
+//======== USER GENERATED CONTENT ========//
+//===== primarily set in global tags =====//
+
 #primary {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
-//======== GLOBAL TAG SELECTORS ========//
-
-body {
-	background-color: white;
-	color: black;
-	zoom: 1;
+#slider-contain {
+	width: 70%;
+	float: left;
+	overflow: hidden;
 }
 
-hr {
-	border: 0;
-    height: 1px;
-    background-image: linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0)); 	
+aside {
+	width: 30%;
+	background-color: $lightblue;
+	height: 500px;
+	display: block;
+	float: right;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-family: $titlefont;
-	margin: 0;
+main {
+	display: block;
 }
-
-h1 {
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 72px;
-	color: $darkblue;
-}
-
-h2 {
-	
-	
-}
-
-h3 {
-	
-}
-
-h4 {
-	
-}
-
-h5 {
-	font-size: 24px;
-}
-
-h6 {
-	
-}
-
-button {
-	font-family: $titlefont;
-	
-}
-p {
-	font-family: $bodyfont;
-	color: black;
-}
-
 //======== FONT AWESOME ========//
 
 .fa {
@@ -337,6 +350,7 @@ p {
 
 footer {
 	width: 100%;
+	padding: 20px 0;	
 	background-color: $darkblue;
 	color: white;
 	
@@ -364,6 +378,9 @@ footer {
 			text-decoration: none;
 			color: white;
 			
+			&:visited {
+				color: white;
+			}
 		}	
 	}
 }
