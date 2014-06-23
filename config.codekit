@@ -4124,11 +4124,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/themes\/fhca\/css\/normalize.css": {
+	"\/wp-content\/themes\/fhca\/css\/wp_styles.css": {
 		"fileType": 16,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/css\/normalize.css",
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/css\/wp_styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4247,15 +4247,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/inc\/jetpack.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/fhca\/inc\/style.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/inc\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -4394,6 +4385,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/wp-content\/themes\/fhca\/style\/wp_styles.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 5,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/style\/wp_styles.scss",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/css\/wp_styles.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/wp-content\/themes\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4403,6 +4410,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-0x400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 43185,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-0x400.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-0x400.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1024x567.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4410,6 +4428,17 @@
 		"initialSize": 76091,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1024x567.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1024x567.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1235x428.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88882,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1235x428.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-1235x428.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4480,6 +4509,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39328,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x500.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58597,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x500.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_1-800x500.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4491,6 +4542,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-0x400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49223,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-0x400.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-0x400.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1024x679.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4498,6 +4560,17 @@
 		"initialSize": 124515,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1024x679.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1024x679.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1235x428.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106951,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1235x428.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-1235x428.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4568,6 +4641,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46589,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x500.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 76248,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x500.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2-800x500.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4575,6 +4670,17 @@
 		"initialSize": 1.20156e+06,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-0x400.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28328,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-0x400.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-0x400.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4652,6 +4758,39 @@
 		"initialSize": 70962,
 		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-700x500.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-700x500.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44414,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x500.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 77221,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x500.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-800x500.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-822x285.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47250,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-822x285.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/fhca_elderly_3-822x285.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -18,6 +18,8 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+	<div id="fixed-nav"></div>
+	
 	<div id="header-wrapper">	
 		<header role="banner">
 			<div id="super-nav">
