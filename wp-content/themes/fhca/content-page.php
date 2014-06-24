@@ -17,7 +17,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<footer class="entry-footer">
+	<div class="entry-footer">
 		<?php edit_post_link( __( 'Edit', 'fhca' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	</div><!-- .entry-footer -->
 </article><!-- #post-## -->

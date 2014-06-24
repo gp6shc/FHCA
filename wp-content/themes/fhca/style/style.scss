@@ -26,31 +26,35 @@ hr {
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: $titlefont;
+	font-weight: 700;
 	margin: 0;
 }
 
 h1 {
 	text-transform: uppercase;
-	font-weight: 700;
 	font-size: 72px;
 	color: $darkblue;
 }
 
 h2 {
-	font-weight: 700;
-	font-size: 42px;
+	font-size: 46px;
 	color: #565656;
 }
 
 h3 {
-	font-weight: 700;
-	font-size: 42px;
-	color: #565656;
+	font-size: 46px;
+	color: $blue;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
 h4 {
-	
+	color: #5b668b;
+	font-family: $bodyfont;
+	font-size: 35px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 h5 {
@@ -71,7 +75,7 @@ h6 {
 p {
 	font-family: $bodyfont;
 	font-size: 28px;
-	color: black;
+	color: #6d6e71;
 	margin: 0;
 }
 
@@ -90,7 +94,7 @@ ol {
 
 li {
 	font-size: 24px;
-	color: #383838;
+	color: #6d6e71;
 	margin: 10px 0;
 }
 
@@ -313,9 +317,6 @@ nav {
 
 //======== GENERIC PAGE STYLE ========//
 
-
-//======== GENERIC PAGE STYLE ========//
-
 .title {
 	width: 100%;
 	min-height: 260px;
@@ -377,8 +378,16 @@ nav {
 .slider {
 	position: relative;
 	width: 100%;
-	height: 420px;
+	height: 520px;
 	overflow: hidden;
+	
+	&:hover .slider-arrow--left {
+		opacity: 1;		
+	}
+	
+	&:hover .slider-arrow--right {
+		opacity: 1;
+	}
 }
 
 .slides {
@@ -395,48 +404,80 @@ nav {
 	margin: 0;
 }
 
-.slider-arrows {}
+.slider-arrows {
+	
+}
 
 .slider-arrow {
 	position: absolute;
 	display: block;
-	margin-bottom: -20px;
-	padding: 20px;
+	color: rgba(0,0,0,0.25);
+	padding: 0 10px;
+	line-height: 520px;
 }
 
-.slider-arrow--right { bottom: 50%; right: 30px; }
-.slider-arrow--left { bottom: 50%; left: 30px; }
+.slider-arrow--right { 
+	bottom: 0;
+	height: 100%;
+	right: 0;
+	opacity: 0;
+	background: rgba(255,255,255,0.25);
+	transition: opacity 0.5s ease;
+}
 
+.slider-arrow--left {
+	bottom: 0;
+	height: 100%;
+	opacity: 0;
+	background: rgba(255,255,255,0.25);
+	transition: opacity 0.5s ease;
+	
+}
 
 .slider-nav {
 	position: absolute;
-	bottom: 30px;
+	bottom: 10px;
 }
 
 .slider-nav__item {
-	width: 12px;
-	height: 12px;
-	float: left;
-	clear: none;
-	display: block;
-	margin: 0 5px;
-	background: #fff;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 10px;
+	background: rgba(255,255,255,0.35);
 }
 
-.slider-nav__item:hover { background: #ccc; }
-.slider-nav__item--current { background: #ccc; }
+.slider-nav__item:hover {
+	background: white;
+}
+
+.slider-nav__item--current { 
+	background: white; 
+}
 
 
 //======== USER GENERATED CONTENT ========//
 //===== primarily set in global tags =====//
 
 #primary {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 }
 
 .entry-content {
 	margin-top: 35px;
+	
+	div {
+		overflow: hidden;
+	}
+	
+	ul {
+		padding-left: 25px;
+		overflow: hidden;
+	}
+	
+	
 }
 
 
@@ -446,20 +487,48 @@ main {
 //======== FONT AWESOME ========//
 
 .fa {
-	color: black;
+	line-height: inherit;
+}
+
+#more-info {
+	background-color: #e9e8e8;
+	position: absolute;
+	text-align: center;
+	margin-top: 20px;
+	left: 0;
+	width: 100%;
+	
+	h3 {
+		margin: 20px 0 0 0;
+	}
+	
+	ul {
+		padding: 0;
+		margin: 0 0 20px 0;	
+	}
+	
+	li {
+		list-style-type: none;
+		
+	}
+	
+	a {
+		font-weight: 700;
+	}
 }
 
 //======== WP ADMIN STYLE ========//
 
 .entry-footer {
 	background: white;
+	text-align: left;
 }
 
 //======== FOOTER STYLE ========//
 
 footer {
 	width: 100%;
-	padding: 20px 0;	
+	margin-top: 20px;
 	background-color: $darkblue;
 	color: white;
 	
@@ -470,10 +539,11 @@ footer {
 		justify-content: space-around;
 		-webkit-flex-flow: row wrap;
 	}
+	
 	ul {
 		list-style: none;
 		padding: 0 10px;
-		width: 210px;
+		width: 214px;
 		
 		li {
 			margin: 0;

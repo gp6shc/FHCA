@@ -12,8 +12,8 @@
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
 <title>FHCA <?php wp_title('|', TRUE, 'left' ); ?></title>
 
-<?php wp_head(); ?>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>

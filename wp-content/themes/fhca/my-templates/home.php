@@ -8,18 +8,34 @@ get_header(); ?>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="<?php bloginfo('stylesheet_directory')?>/js/jquery.glide.min.js"></script>
 
-<div class="slider	">
+<div class="slider">
 	<ul class="slides">
-		<li class="slide"><div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);"></div></li>
-		<li class="slide"><div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);"></div></li>
-		<li class="slide"><div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);"></div></li>
+		<li class="slide">
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);">
+				
+			</div>
+		</li>
+		<li class="slide">
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);">
+				
+			</div>
+		</li>
+		<li class="slide">
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);">
+				
+			</div>
+		</li>
 	</ul>
 </div>		
 
 <script>
-    $('.slider').glide({
-        autoplay: 5000,
-    });
+    $(window).bind("load", function() {
+    	$('.slider').glide({
+    	    autoplay: 5000,
+    	    arrowLeftText: '<i class="fa fa-chevron-left fa-5x"></i>',
+    	    arrowRightText: '<i class="fa fa-chevron-right fa-5x"></i>'
+			});
+    	});
 </script>
 	
 	<div id="primary" class="content-area">
