@@ -20,7 +20,8 @@ body {
 
 hr {
 	border: 0;
-    height: 3px;
+    height: 2px;
+    margin: 40px 0;
     background-image: linear-gradient(left, rgba(111,111,111,0), rgba(111,111,111,0.75), rgba(111,111,111,0)); 	
 }
 
@@ -44,7 +45,7 @@ h2 {
 h3 {
 	font-size: 46px;
 	color: $blue;
-	margin-bottom: 20px;
+	margin: 20px 0;
 	text-align: center;
 }
 
@@ -54,7 +55,7 @@ h4 {
 	font-size: 35px;
 	font-weight: 400;
 	text-align: center;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 
 h5 {
@@ -63,18 +64,15 @@ h5 {
 }
 
 h6 {
-	font-size: 28px;
-	font-weight: 400;
-	text-align: center;
-	color: $blue;
-	margin-top: 35px;
+	font-size: 26px;
+	margin: 25px 0 10px 0;
 	
 }
 
 
 p {
 	font-family: $bodyfont;
-	font-size: 28px;
+	font-size: 24px;
 	color: #6d6e71;
 	margin: 0;
 }
@@ -100,6 +98,28 @@ li {
 
 button {
 	font-family: $titlefont;
+	padding: 0;
+	font-size: 24px;
+	margin: 20px 0;
+	border: 1px $blue solid;
+	border-radius: 10px;
+	
+	&:hover {
+		cursor: default;
+	}
+	
+	a {
+		display: block;
+		padding: 9px 20px;
+		background-color: white;
+		
+		&:hover {
+			background-color: $blue;
+			color: white;
+			text-decoration: none;
+		}
+	}
+	
 	
 }
 
@@ -110,10 +130,10 @@ img {
 a {
 	color: $blue;
 	text-decoration: none;
+	line-height: 1;
 	
 	&:hover {
 		text-decoration: underline;
-		
 	}
 	
 	&:visited {
@@ -129,13 +149,13 @@ a {
 	background: red;
 	position: fixed;
 	display: none;
-	z-index: 9;
+	z-index: 19;
 }
 
 #header-wrapper {
 	position: relative;
 	height: 150px;
-	z-index: 10;
+	z-index: 20;
 }
 
 header[role="banner"] {
@@ -168,11 +188,6 @@ header[role="banner"] {
 	}
 	a {
 		color: $darktext;
-		text-decoration: none;
-		
-		&:hover {
-			color: white;
-		}		
 		
 		&:visited {
 			color: $darktext;
@@ -277,6 +292,7 @@ nav {
 }	
 
 .sub-nav {
+	height: 286px;
 	margin-top: -25px;
 	opacity: 0;
 	transition: opacity 0.2s ease;
@@ -291,10 +307,6 @@ nav {
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 20px;
-	    
-	    &:hover {
-		    text-decoration: underline;
-	    }
 	    
 	    &:visited {
 	    	color: white;
@@ -326,24 +338,42 @@ nav {
 	
 }
 
+#page-nav-background {
+	background-image: linear-gradient(rgba(145,177,221,1) 33.33%, rgba(177,195,221,1) 33.34%, rgba(177,195,221,1) 66.66%, rgba(194,206,221,1) 66.67%, rgba(194,206,221,1) 100%);
+	position: absolute;
+	height: 180px;
+	width: 100%;
+	z-index: 1;
+}
+
 .page-nav {
 	width: 100%;
 	min-height: 60px;
-	background-color: $lightblue;
+	background-color: rgba(0,0,0,0);
 	overflow: hidden;
+	position: relative;
+	z-index: 10;
 	display: flex;
 	justify-content: center;
 	-webkit-flex-flow: row wrap;
 	
 	li {
 		height: 60px;
-		padding: 0 10px;
 		margin: 0;
 		list-style-type: none;
+		
+		&:hover {
+			background-color: rgba(255,255,255,0.5); 			
+			
+			a {
+				color: $darkblue;
+			}
+		}
 	}
 	
 	a {
 		display: block;
+		padding: 0 18px;
 		line-height: 60px;
 		color: white;
 		font-family: $titlefont;
@@ -351,9 +381,6 @@ nav {
 		font-size: 20px;
 		text-decoration: none;
 		
-		&:hover {
-			color: $darkblue;
-		}
 	}
 	
 	.current_page_item {
@@ -363,6 +390,9 @@ nav {
 			color: $darkblue;
 			font-weight: 700;
 			
+			&:hover {
+				background-color: white;
+			}
 		}
 	}
 }
@@ -461,13 +491,15 @@ nav {
 //===== primarily set in global tags =====//
 
 #primary {
-	width: 70%;
-	margin: 0 auto;
+
 }
 
 .entry-content {
-	margin-top: 35px;
-	
+	padding: 35px 0;
+	position: relative;
+	background-color: white;
+	z-index: 10;
+
 	div {
 		overflow: hidden;
 	}
@@ -477,44 +509,58 @@ nav {
 		overflow: hidden;
 	}
 	
+	li {
+		padding: 10px 0 0 13px;
+		list-style-type: square;
+	}
+	
+	a {
+		font-weight: 700;		
+	}
 	
 }
 
-
-main {
-	display: block;
+#contain {
+	width: 70%;
+	margin: 0 auto;
+	
 }
-//======== FONT AWESOME ========//
 
-.fa {
-	line-height: inherit;
+.hentry {
+	margin: 0;	
 }
+
+
 
 #more-info {
+	margin: 15px 0 -35px 0;
 	background-color: #e9e8e8;
-	position: absolute;
 	text-align: center;
-	margin-top: 20px;
-	left: 0;
 	width: 100%;
+	padding: 35px 0;
 	
 	h3 {
-		margin: 20px 0 0 0;
+	
 	}
 	
 	ul {
 		padding: 0;
-		margin: 0 0 20px 0;	
+		margin: 0;
 	}
 	
 	li {
 		list-style-type: none;
+		margin: 0 0 15px 0;	
+		font-size: 30px;
+		line-height: 100%;
 		
 	}
-	
-	a {
-		font-weight: 700;
-	}
+}
+
+//======== FONT AWESOME ========//
+
+.fa {
+	line-height: inherit;
 }
 
 //======== WP ADMIN STYLE ========//
@@ -528,7 +574,6 @@ main {
 
 footer {
 	width: 100%;
-	margin-top: 20px;
 	background-color: $darkblue;
 	color: white;
 	
@@ -542,7 +587,7 @@ footer {
 	
 	ul {
 		list-style: none;
-		padding: 0 10px;
+		padding: 35px 10px;
 		width: 214px;
 		
 		li {
@@ -551,11 +596,9 @@ footer {
 			font-family: $titlefont;
 			font-size: 20px;
 			opacity: 1;
-
 		}
 		
 		a {
-			text-decoration: none;
 			color: white;
 			
 			&:visited {
