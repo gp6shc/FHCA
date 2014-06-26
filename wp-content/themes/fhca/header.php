@@ -27,11 +27,8 @@
 			    	<!-- missing </li> tags to counter inline-block space -->
 			    	<li><a href="">Media Center</a>
 			    	<li><a href="">Contact</a>
-			    	<li id="search">
-			    	    <form id="searchform" method="get" action="/index.php">
-			    	    		<input type="text" name="s" placeholder="Search" />
-			    	    		<input type="image" src="<?php bloginfo('stylesheet_directory')?>/img/fhca_search.png" alt="Submit Form" />
-			    	    </form>
+			    	<li class="search">
+			    	    <?php get_search_form(); ?>
 			    </ul>
 			</div>
 			
@@ -43,7 +40,7 @@
 			
 			<nav role="navigation">
 			    <ul class="main-nav" id="elder-care">
-			    	<li><a href="<?php echo home_url(); ?>/florida-elder-care">Florida & Elder Care</a>
+			    	<li><a href="<?php echo home_url(); ?>/florida-elder-care/infographic">Florida & Elder Care</a>
 			    		<ul class="sub-nav">
 			        		<?php wp_list_pages('title_li=&child_of=10'); ?>
 			    		</ul>
@@ -51,7 +48,7 @@
 			    </ul>
 			    
 			    <ul class="main-nav" id="aging">
-			        <li><a href="<?php echo home_url(); ?>/aging-issues">Aging Issues</a>
+			        <li><a href="<?php echo home_url(); ?>/aging-issues/balance">Aging Issues</a>
 			        	<ul class="sub-nav">
 			    	    	<?php wp_list_pages('title_li=&child_of=12'); ?>
 			        	</ul>
@@ -60,7 +57,7 @@
 			    </ul>
 			    
 			    <ul class="main-nav" id="care-options">
-			        <li><a href="<?php echo home_url(); ?>/care-options">Care Options</a>
+			        <li><a href="<?php echo home_url(); ?>/care-options/part-time-home-care">Care Options</a>
 			        	<ul class="sub-nav">
 			    	    	<?php wp_list_pages('title_li=&child_of=14'); ?>
 			        	</ul>
@@ -69,7 +66,7 @@
 			    </ul>
 			    
 			    <ul class="main-nav" id="stories">
-			        <li><a href="<?php echo home_url(); ?>/stories">Stories</a>
+			        <li><a href="<?php echo home_url(); ?>/stories/elder-care">Stories</a>
 			        	<ul class="sub-nav">
 			        		<?php wp_list_pages('title_li=&child_of=16'); ?>
 			    		</ul>

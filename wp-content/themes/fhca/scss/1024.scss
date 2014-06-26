@@ -1,0 +1,44 @@
+#fixed-nav {
+	display: none;
+}
+
+#super-nav {
+	background: blue;
+	ul {
+		margin: 0 3%;
+	}
+}
+
+.site-branding {
+	margin: 15px 0 0 3%;	
+}
+
+nav {
+	padding-right: 3%;
+	
+	&:hover {
+		min-height: 104px;
+		
+		.main-nav {
+			opacity: 1;
+		}
+	}
+}
+.sub-nav {
+	display: none;	
+}
+
+.slider-arrows {
+	display: none;
+}
+
+#contain {
+	width: 80%;
+}
+
+footer {
+	 
+	 div {
+		 width: 95%;
+	 }
+}

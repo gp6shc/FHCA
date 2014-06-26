@@ -56,6 +56,7 @@ h4 {
 	font-weight: 400;
 	text-align: center;
 	margin: 20px 0;
+	padding: 0 85px;
 }
 
 h5 {
@@ -112,6 +113,8 @@ button {
 		display: block;
 		padding: 9px 20px;
 		background-color: white;
+		color: $blue;
+		transition: background-color .1s linear, color .3s linear;
 		
 		&:hover {
 			background-color: $blue;
@@ -125,6 +128,8 @@ button {
 
 img {
 	margin: 20px 0;
+	height: auto;
+	max-width: 100%;
 }
 
 a {
@@ -139,6 +144,11 @@ a {
 	&:visited {
 		color: $blue;
 	}
+}
+
+::selection {
+		background: $blue;
+		color: white;
 }
 
 //======== HEADER STYLE ========//
@@ -174,18 +184,20 @@ header[role="banner"] {
 	
 	ul {
 		float: right;
-		margin: 0 40px 0 0;
+		margin: 0 5%;
 		height: 30px;
 		padding: 8px 0;
 	}
+	
 	li {
 		display: inline-block;
 		vertical-align: middle;
 		list-style-type: none;
 		font-family: $bodyfont;
 		font-size: 16px;
-		margin: 0 5px;
+		margin: 0 0 0 8px;
 	}
+	
 	a {
 		color: $darktext;
 		
@@ -195,7 +207,9 @@ header[role="banner"] {
 	}
 }
 
-#search {
+
+
+.search {
 	margin: 0;
 	height: 30px;
 	vertical-align: middle;
@@ -226,26 +240,24 @@ header[role="banner"] {
 	}
 }
 
-
 .site-branding {
 	float: left;
 	color: white;
 	height: 74px;
 	width: auto;	
-	margin: 15px 0 0 45px;
+	margin: 15px 0 0 5%;
 	
 	img {
 		margin: 0;
 	}
 }
 
-
 //======== NAVIGATION STYLE ========//
 
 nav {
 	height: 104px;
 	width: auto;
-	padding-right: 45px;
+	padding-right: 5%;
 	float: right;
 	overflow: hidden;
 	transition: min-height 0.4s linear;
@@ -262,6 +274,7 @@ nav {
 .main-nav {
 	float: left;
 	margin: 0;
+	padding-left: 30px;
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
 		
@@ -273,6 +286,7 @@ nav {
 	    line-height: 104px;
 	    color: white;
 	    text-decoration: none;
+	    cursor: default;
 	    		
 	    &:visited {
 	    	color: white;
@@ -307,6 +321,11 @@ nav {
 		font-size: 20px;
 		font-weight: 400;
 		line-height: 20px;
+		cursor: pointer;
+	    
+	    &:hover {
+		    text-decoration: underline;
+	    }
 	    
 	    &:visited {
 	    	color: white;
@@ -490,10 +509,6 @@ nav {
 //======== USER GENERATED CONTENT ========//
 //===== primarily set in global tags =====//
 
-#primary {
-
-}
-
 .entry-content {
 	padding: 35px 0;
 	position: relative;
@@ -506,12 +521,12 @@ nav {
 	
 	ul {
 		padding-left: 25px;
-		overflow: hidden;
 	}
 	
 	li {
 		padding: 10px 0 0 13px;
 		list-style-type: square;
+		list-style-position: inside;
 	}
 	
 	a {
@@ -523,7 +538,6 @@ nav {
 #contain {
 	width: 70%;
 	margin: 0 auto;
-	
 }
 
 .hentry {
@@ -570,6 +584,22 @@ nav {
 	text-align: left;
 }
 
+//======== 404 STYLE ========//
+
+.large-search {
+	width: 100%;
+	text-align: center;
+	padding: 35px 0;
+	background-color: $lightblue;
+	
+	input[type='text'] {
+		width: 240px;
+		background-color: white;
+		color: black;
+	}
+}
+
+
 //======== FOOTER STYLE ========//
 
 footer {
@@ -588,7 +618,7 @@ footer {
 	ul {
 		list-style: none;
 		padding: 35px 10px;
-		width: 214px;
+		max-width: 214px;
 		
 		li {
 			margin: 0;
@@ -608,6 +638,22 @@ footer {
 	}
 }
 
+//======== MEDIA QUERIES ========//
+
+@media only screen 
+and (max-width: 1024px) {
+	@import '1024';
+}
+
+@media only screen 
+and (max-width: 768px) {
+	@import '768';
+}
+
+@media only screen 
+and (max-width: 480px) {
+	@import '480';
+}
 
 
 
