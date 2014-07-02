@@ -352,7 +352,7 @@ nav:hover .main-nav { opacity: 0.5; }
 
 .entry-content { padding: 35px 0; position: relative; background-color: white; z-index: 10; }
 .entry-content div { overflow: hidden; }
-.entry-content ul { padding-left: 25px; }
+.entry-content ul { overflow: hidden; padding-left: 25px; }
 .entry-content li { padding: 10px 0 0 13px; list-style-type: square; list-style-position: inside; }
 .entry-content a { font-weight: 700; }
 
@@ -362,7 +362,7 @@ nav:hover .main-nav { opacity: 0.5; }
 
 #more-info { margin: 15px 0 -35px 0; background-color: #e9e8e8; text-align: center; width: 100%; padding: 35px 0; }
 #more-info ul { padding: 0; margin: 0; }
-#more-info li { list-style-type: none; margin: 0 0 15px 0; font-size: 30px; line-height: 100%; }
+#more-info li { list-style-type: none; margin: 0 0 15px 0; font-size: 26px; line-height: 100%; }
 
 .fa { line-height: inherit; }
 
@@ -394,10 +394,11 @@ footer ul a:visited { color: white; }
   #super-nav { background: green; }
   #super-nav ul { margin: 0 2%; }
   .site-branding { margin: 15px 0 0 2%; }
-  nav { padding-right: 2%; float: none; }
-  .main-nav { padding-left: 15px; float: none; }
-  .main-nav a { line-height: 1; text-align: right; }
+  nav { padding-right: 2%; float: right; }
+  .main-nav { padding-left: 15px; }
+  .main-nav a { font-size: 22px; display: inline; }
   .entry-content div { overflow: visible; }
+  .entry-content ul { overflow: visible; }
   #contain { width: 88%; }
   .alignleft { float: left; margin: 0 1.5em 1em -5%; }
   .alignright { float: right; margin-left: 1.5em; margin: 0 -5% 1em 1.5em; }

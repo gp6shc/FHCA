@@ -20,22 +20,25 @@ h4 {
 
 nav {
 	padding-right: 2%;
-	float: none;
+	float: right;
 }
 
 .main-nav {
 	padding-left: 15px;
-	float: none;
 	
 	a {
-		line-height: 1;
-		text-align: right;
+		font-size: 22px;
+		display: inline;
 	}
 }
 
 .entry-content {
 	
 	div {
+		overflow: visible;
+	}
+	
+	ul {
 		overflow: visible;
 	}
 }
