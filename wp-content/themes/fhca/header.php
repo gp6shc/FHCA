@@ -15,7 +15,7 @@
 <?php if( is_front_page() ) {?>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
 <?}?>
-
+<script type="application/javascript" async src="<?php bloginfo('stylesheet_directory')?>/js/fastclick.min.js"></script>
 <?php wp_head(); ?>
 </head>
 
@@ -42,7 +42,7 @@
 				    <a href="<?php echo home_url(); ?>">
 				    <!-- <img src="<?php bloginfo('stylesheet_directory')?>/img/logo.svg" onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png"" alt="60 Years of Caring"> -->
 				    <div style="height: 74px; width: 74px; border-radius: 50%; background-color: lightblue; display: inline-block; "></div>
-				    <span style="color: white;">60 Years of Caring</span>
+				    <span style="color: white;">60 Years of Swearing</span>
 				    </a>
 				</div>
 				

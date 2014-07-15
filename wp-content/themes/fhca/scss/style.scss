@@ -3,10 +3,10 @@
 
 // ======== VARIABLES ======== //
 
-$lightblue: #91B1DD;
-$blue: #21376E;
-$darkblue: #142858;
-$darktext: #ccc;
+$lightblue: #91B1DD; // RGB = 145,177,221
+$blue: #21376E; // RGB = 33,55,110
+$darkblue: #142858; // RGB = 20,40,88
+$darktext: #ccc; // RGB = 204,204,204
 
 $titlefont: 'PT Sans', sans-serif;
 $bodyfont: 'Crimson Text', serif;
@@ -107,19 +107,19 @@ button {
 	background-color: rgba(255,255,255,0.5);
 	
 	&:hover {
-		cursor: default;
+			background-color: $blue;
+			color: white;
+			
+			a {
+				text-decoration: none;
+				color: white;
+			}
 	}
 	
 	a {
 		display: block;
 		padding: 9px 20px;
 		color: $blue;
-		
-		&:hover {
-			background-color: $blue;
-			color: white;
-			text-decoration: none;
-		}
 	}
 	
 	
@@ -191,7 +191,6 @@ header[role="banner"] {
 	width: 100%;
 	min-height: 150px;
 	position: absolute;
-	overflow: hidden;
 }
 
 #super-nav {
@@ -235,6 +234,7 @@ header[role="banner"] {
 	form {
 		height: 30px;
 	}
+	
 	input[type='text'] {
 		background-color: $blue;
 		border-radius: 20px;
@@ -276,14 +276,18 @@ nav {
 	height: 104px;
 	width: auto;
 	float: right;
-	overflow: hidden;
-	transition: min-height 0.4s linear;
+	
+	transition: height 0.4s linear;
 	
 	&:hover {
-		min-height: 401px;
+		height: 401px;
 		
 		.main-nav {
 			opacity: 0.5;
+		}
+		
+		.sub-nav {
+			visibility: visible;
 		}
 	}
 }
@@ -311,7 +315,6 @@ nav {
 	}
 	
 	ul {
-		padding: 0;
 		position: absolute;
 	}
 	
@@ -323,9 +326,12 @@ nav {
 }	
 
 .sub-nav {
+	visibility: hidden;
 	height: 286px;
 	margin-top: -25px;
+	padding: 0 30px 0 0;
 	opacity: 0;
+	
 	transition: opacity 0.2s ease;
 	
 	li {
@@ -376,9 +382,11 @@ nav {
 	height: 400px;
 	float: left;
 	background-size: cover;
+	background-position: center center;
 	
 	div {
 		width: 45%;
+		margin: 25px;
 	}
 	
 	h2 {
@@ -390,6 +398,7 @@ nav {
 	p {
 		color: black;
 		font-size: 16px;
+		padding: 5px;
 		background-color: rgba(255,255,255,0.5);
 	}
 }
@@ -415,7 +424,7 @@ aside {
 			div>i, h6, p {
 				opacity: 0.5;
 			}
-	}
+		}
 	}
 	
 	.fa {
@@ -441,7 +450,7 @@ aside {
 	
 	div>i {
 		opacity: 1;
-		transition: opacity 0.1s ease;
+		transition: opacity 0.2s ease;
 	}
 		
 	li {
@@ -451,15 +460,15 @@ aside {
 		h6 {
 			font-size: 18px;
 			color: $blue;
-			margin: 5px 0;
+			margin: 0 0 5px 0;
 			opacity: 1;
-			transition: opacity 0.1s ease;
+			transition: opacity 0.2s ease;
 		}
 		
 		p {
 			font-size: 16px;
 			opacity: 1;
-			transition: opacity 0.1s ease;
+			transition: opacity 0.2s ease;
 		}
 		
 		&:hover {
@@ -482,16 +491,23 @@ aside {
     height: 163px;
     margin: 3% 3% 3% 0;
     float: left;
-    background-color: silver;
+    background-color: $blue;
+	background-size: cover;
+	background-position: right center;
     
-    div {
+    a {
+		display: block;
 		height: 163px;
 		line-height: 163px;
+		background-color: rgba(33,55,110,0.4);
 		
+		&:hover {
+	    background-color: rgba(231,191,82,0.5);
+		}
     }
     
     span {
-		font-size: 22px;
+		font-size: 28px;
 		font-weight: 700;
 		text-align: center;
 	    color: white;
@@ -526,7 +542,6 @@ aside {
 	width: 100%;
 	min-height: 60px;
 	background-color: rgba(0,0,0,0);
-	overflow: hidden;
 	position: relative;
 	z-index: 10;
 	display: flex;
@@ -581,14 +596,15 @@ aside {
 	position: relative;
 	background-color: white;
 	z-index: 10;
-
-	div {
-		overflow: hidden;
-	}
 	
 	ul {
-		overflow: hidden;
 		padding-left: 25px;
+		
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 	}
 	
 	li {

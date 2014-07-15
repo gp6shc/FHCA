@@ -72,14 +72,14 @@ get_header(); ?>
 		</aside>
 		
 		<div class="boxes">
-			<div class="box">
-			    <div><span>60 Years of Caring Report</span></div>
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);" >
+			    <a href="<?php echo home_url(); ?>/florida-elder-care/60-years-of-caring-report/"><span>60 Years of Caring Report</span></a>
 			</div>
-			<div class="box">
-			    <div><span>60 Years of Caring Report</span></div>
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);">
+			    <a href="<?php echo home_url(); ?>/florida-elder-care/60-years-of-caring-report/"><span>60 Years of Caring Report</span></a>
 			</div>
-			<div class="box">
-			    <div><span>60 Years of Caring Report</span></div>
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);">
+			    <a href="<?php echo home_url(); ?>/florida-elder-care/60-years-of-caring-report/"><span>60 Years of Caring Report</span></a>
 			</div>
 		</div>
 	</div>	

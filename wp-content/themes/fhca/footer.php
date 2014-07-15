@@ -29,6 +29,10 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<script type="text/javascript">
+window.addEventListener('load', function() {
+	FastClick.attach(document.body);
+}, false);
+</script>
 </body>
 </html>
