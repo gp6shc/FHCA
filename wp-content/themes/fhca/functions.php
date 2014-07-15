@@ -104,3 +104,12 @@ function fhca_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'fhca_scripts' );
+
+/*Removes the top level categories from the search results, or any particular page ID*/
+
+function jp_search_filter( $query ) {
+  if ( $query->is_search && $query->is_main_query() ) {
+    $query->set( 'post__not_in', array( 6,10,12,14,16 ) ); 
+  }
+}
+add_filter( 'pre_get_posts', 'jp_search_filter' );

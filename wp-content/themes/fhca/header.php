@@ -42,7 +42,7 @@
 				    <a href="<?php echo home_url(); ?>">
 				    <!-- <img src="<?php bloginfo('stylesheet_directory')?>/img/logo.svg" onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png"" alt="60 Years of Caring"> -->
 				    <div style="height: 74px; width: 74px; border-radius: 50%; background-color: lightblue; display: inline-block; "></div>
-				    <span style="color: white;">60 Years of Swearing</span>
+				    <span style="color: white;">60 Years</span>
 				    </a>
 				</div>
 				

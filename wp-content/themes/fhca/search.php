@@ -23,6 +23,7 @@ get_header(); ?>
 				
 				get_template_part( 'content', 'search' );
 				?>
+				<hr>
 			<?php endwhile;  ?>
 
 		<?php else : ?>
@@ -30,8 +31,14 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
+		
 			</div>
 		</main><!-- #main -->
+		
+		<div class="large-search">
+			<?php get_search_form(); ?>
+		</div>
+		
 	</section><!-- #primary -->
 
 <?php get_footer(); ?>
