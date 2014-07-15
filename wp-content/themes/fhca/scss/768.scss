@@ -6,21 +6,15 @@ h4 {
 	padding: 0 45px;
 }
 
-#super-nav {
-	background: green;
-	
-	ul {
-		margin: 0 2%;
-	}
+.header-contain {
+	padding: 0 2%;
 }
 
-.site-branding {
-	margin: 15px 0 0 2%;	
-}
-
-nav {
-	padding-right: 2%;
-	float: right;
+.header-super-contain {
+	padding: 0 2%;
+	margin: 0 auto;
+	//background-color: $darkblue;
+	background-color: green;
 }
 
 .main-nav {
@@ -29,6 +23,37 @@ nav {
 	a {
 		font-size: 22px;
 		display: inline;
+	}
+}
+
+#home-contain {
+	width: 96%;
+	margin: 15px auto;
+}
+
+.feature {
+	width: 100%;
+	margin-right: 0;
+	background-position: left center;
+	 
+	 div {
+		 margin: 20px;
+	 }
+	 
+	 h2 {
+		 font-size: 46px;
+	 }
+}
+
+aside {
+	width: 50%;
+}
+
+.boxes {
+	width: 50%;
+	
+	.box {
+		width: 97%;
 	}
 }
 

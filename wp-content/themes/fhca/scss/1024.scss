@@ -2,19 +2,21 @@
 	display: none;
 }
 
-#super-nav {
-	background: blue;
-	ul {
-		margin: 0 3%;
-	}
+.header-contain {
+	padding: 0 3%;
+	margin: 0 auto;
+	max-width: 2000px;
 }
 
-.site-branding {
-	margin: 15px 0 0 3%;	
+.header-super-contain {
+	padding: 0 3%;
+	margin: 0 auto;
+	max-width: 2000px;
+	//background-color: $darkblue;
+	background-color: blue;
 }
 
 nav {
-	padding-right: 3%;
 	
 	&:hover {
 		min-height: 104px;
@@ -26,6 +28,23 @@ nav {
 }
 .sub-nav {
 	display: none;	
+}
+
+#home-contain {
+	width: 88%;
+	margin: 15px auto;
+}
+
+.feature {
+	 width: 66%;
+	 margin-right: 2%;
+	 
+	 div {
+	 }
+	 
+	 h2 {
+		 font-size: 46px;
+	 }
 }
 
 #contain {

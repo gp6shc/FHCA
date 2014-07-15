@@ -1,0 +1,49 @@
+.header-contain {
+	padding: 0 1%;
+}
+
+.header-super-contain {
+	padding: 0 1%;
+	//background-color: $darkblue;
+	background-color: orange;
+}
+
+header[role="banner"] {
+	//max-height: 150px;
+	overflow: hidden;
+	
+}
+
+.site-branding {
+	float: none;
+}
+
+nav {
+	float: none;
+	margin: 10px 0;
+}
+
+.main-nav {
+	display: block;
+	float: none;
+	clear: both;
+	
+	li {
+		
+	}
+	
+	a {
+		line-height: 1;
+	}
+	
+	&:before {
+		content: "";
+		display: block;
+		border: 0;
+		height: 0;
+		margin: 10px 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		
+	}
+}

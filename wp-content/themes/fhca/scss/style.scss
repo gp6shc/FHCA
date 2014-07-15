@@ -20,9 +20,10 @@ body {
 
 hr {
 	border: 0;
-    height: 2px;
-    margin: 40px 0;
-    background-image: linear-gradient(left, rgba(111,111,111,0), rgba(111,111,111,0.75), rgba(111,111,111,0)); 	
+    height: 0;
+    margin: 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);	
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -245,9 +246,16 @@ header[role="banner"] {
 		font-size: 16px;
 		padding: 0 14px;
 		margin-right: 2px;
+		border: 2px solid $blue;
+		box-sizing: border-box;
+		transition: border 0.7s ease;
 		
 		&::-webkit-input-placeholder { 
 			color: $darktext;			
+		}
+		
+		&:focus {
+			border: 2px solid rgba(145,177,221,0.5);
 		}
 	}
 	
@@ -273,7 +281,7 @@ header[role="banner"] {
 //======== NAVIGATION STYLE ========//
 
 nav {
-	height: 104px;
+	min-height: 104px;
 	width: auto;
 	float: right;
 	
@@ -322,6 +330,10 @@ nav {
 		font-family: $titlefont;
 		list-style-type: none;
 		margin: 0;
+	}
+	
+	hr {
+		display: none;
 	}
 }	
 
@@ -406,8 +418,6 @@ nav {
 aside {
 	width: 32%;
 	float: right;
-	
-	
 	
 	h2 {
 		text-align: center;
@@ -680,6 +690,11 @@ aside {
 		width: 240px;
 		background-color: white;
 		color: black;
+		border: 2px solid $lightblue;
+		
+		&:focus {
+			border: 2px solid $blue;
+		}
 	}
 }
 
@@ -732,6 +747,11 @@ and (max-width: 1024px) {
 @media only screen 
 and (max-width: 768px) {
 	@import '768';
+}
+
+@media only screen 
+and (max-width: 730px) {
+	@import '730';
 }
 
 @media only screen 
