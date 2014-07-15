@@ -4178,7 +4178,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 139253,
+		"initialSize": 425249,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/fhca_elderly_1.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/fhca_elderly_1.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -4492,68 +4492,90 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-01-150x150.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-01-150x150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 8953,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01-150x150.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01-150x150.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01-150x150.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-01-237x300.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-01-237x300.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 21530,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01-237x300.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01-237x300.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01-237x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01-237x300.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-01.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 127714,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-01.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-01.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-03-150x150.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-03-150x150.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 9615,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03-150x150.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03-150x150.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03-150x150.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-03-297x300.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-03-297x300.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 25913,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03-297x300.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03-297x300.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03-297x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03-297x300.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/wp-content\/uploads\/2014\/06\/whitehall-03.jpg": {
+	"\/wp-content\/uploads\/2014\/07\/whitehall-03.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 100394,
-		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/06\/whitehall-03.jpg",
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/whitehall-03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/whitehall-01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127714,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/whitehall-01.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/whitehall-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/whitehall-03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 100394,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/whitehall-03.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/whitehall-03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
