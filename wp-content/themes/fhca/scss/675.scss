@@ -1,0 +1,109 @@
+.header-contain {
+	padding: 0;
+}
+
+.header-super-contain {
+	padding: 0 1%;
+	//background-color: $darkblue;
+	background-color: orange;
+}
+
+#nav-bar {
+	overflow: hidden;
+	
+}
+
+.site-branding {
+	padding: 0 25px;
+}
+
+//======== MENU BUTTON STYLE ========//
+
+#menu-button {
+	display: block;
+	float: right;
+	position: relative;
+    
+    span {
+		color: white;
+		line-height: 104px;
+		opacity: 0;
+	}
+	
+	&:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 2.3em;
+			width: 2em;
+			border-radius: 1em;
+			height: 0.3em;
+			background: white;
+			box-shadow: 0 0.7em 0 0 white, 0 1.4em 0 0 white;
+	}
+}		
+
+nav {
+	float: none;
+	height: auto;
+	
+}
+
+.main-nav {
+	display: block;
+	float: none;
+	clear: both;
+	padding: 0;
+	text-align: right;
+	
+	li {
+		padding: 0 35px 0 0;
+		
+	}
+	
+	a {
+		line-height: 1;
+	}
+	
+	&:before {
+		content: "";
+		display: block;
+		border: 0;
+		height: 2px;
+		margin: 10px 0;
+		background-image: linear-gradient(left, rgba(255,255,255,0) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
+	}
+}
+
+.feature {
+	height: 300px;
+	
+	div {
+		width: 60%;
+	}
+}
+
+aside {
+	width: 60%;
+}
+
+.boxes {
+	width: 40%;
+	
+	.box {
+		width: 97%;
+	}
+}
+
+footer {
+	 
+	 div {
+		 width: 90%;
+		 justify-content: space-between;
+	 }
+	 
+	 ul {
+		 width: 214px;
+		 padding: 0;
+	 }
+}

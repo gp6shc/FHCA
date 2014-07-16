@@ -187,11 +187,12 @@ a {
 	z-index: 20;
 }
 
-header[role="banner"] {
+#nav-bar {
 	background-color: $blue;
 	width: 100%;
 	min-height: 150px;
 	position: absolute;
+	transition: height 0.3s linear;
 }
 
 #super-nav {
@@ -224,8 +225,6 @@ header[role="banner"] {
 		}
 	}
 }
-
-
 
 .search {
 	margin: 0;
@@ -269,23 +268,60 @@ header[role="banner"] {
 .site-branding {
 	float: left;
 	color: white;
-	height: 74px;
+	height: 80px;
 	width: auto;	
-	margin: 15px 0 0 0;
+	margin: 9px 0 0 0;
 	
 	img {
 		margin: 0;
 	}
+	
+	a {
+		display: block;
+	}
+}
+	
+#slogan {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    
+    span {
+    	display: inline-block;
+    	line-height: 1;
+    	vertical-align: middle;
+    	font-size: 30px;
+    	font-weight: 700;
+    	padding-left: 12px;
+    	
+    	span {
+	    	font-weight: 400;
+	    	padding: 0;
+	    	
+    	}
+    }
+    
+
 }
 
 //======== NAVIGATION STYLE ========//
 
+#menu-button {
+	display: none;
+}
+
+.height {
+	height: 350px !important;
+}
+
 nav {
-	min-height: 104px;
+	height: 104px;
 	width: auto;
 	float: right;
 	
-	transition: height 0.4s linear;
+	transition: height 0.3s linear;
 	
 	&:hover {
 		height: 401px;
@@ -303,7 +339,7 @@ nav {
 .main-nav {
 	float: left;
 	margin: 0;
-	padding-left: 30px;
+	padding-left: 25px;
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
 		
@@ -389,8 +425,8 @@ nav {
 }
 
 .feature {
-	width: 65.9%;
-	margin-right: 2.1%;
+	width: 65.95%;
+	margin-right: 2.05%;
 	height: 400px;
 	float: left;
 	background-size: cover;
@@ -410,7 +446,6 @@ nav {
 	p {
 		color: black;
 		font-size: 16px;
-		padding: 5px;
 		background-color: rgba(255,255,255,0.5);
 	}
 }
@@ -465,6 +500,7 @@ aside {
 		
 	li {
 		list-style-type: none;
+		padding-top: 15px;
 		margin: 0;
 
 		h6 {
@@ -512,7 +548,7 @@ aside {
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
-	    background-color: rgba(231,191,82,0.5);
+	    	background-color: rgba(231,191,82,0.5);
 		}
     }
     
@@ -583,20 +619,52 @@ aside {
 		text-decoration: none;
 		
 	}
+}
+
+.side-nav {
+	position: fixed;
+	color: $blue;
+	width: auto;
+	background-color: rgba(145,177,221,0.3);
+	z-index: 30;
+	top: 150px;
+	left: -15px;
+	border-top: 2px solid rgba(145,177,221,0.1);
+	border-bottom: 2px solid rgba(145,177,221,0.1);
+	
+	a {
+		font-size: 18px;
+		padding: 10px 10px 10px 25px;
+		display: block;
+
+		&:hover {
+			background-color: rgba(145,177,221,0.6);
+			text-decoration: none;
+			
+		}	
+	}
+	
+	li {
+		list-style-type: none;
+		margin: 0;
+		
+	}
 	
 	.current_page_item {
-		background-color: white;
-		
+    	background-color: white;
+    
 		a {
-			color: $darkblue;
+    		color: $darkblue;
 			font-weight: 700;
-			
+    	
 			&:hover {
-				background-color: white;
+    			background-color: white;
 			}
 		}
 	}
 }
+
+
 
 //======== USER GENERATED CONTENT ========//
 //===== primarily set in global tags =====//
@@ -638,8 +706,6 @@ aside {
 	margin: 0;	
 }
 
-
-
 #more-info {
 	margin: 15px 0 -35px 0;
 	background-color: #e9e8e8;
@@ -674,7 +740,7 @@ aside {
 //======== WP ADMIN STYLE ========//
 
 .entry-footer {
-	background: white;
+	background: inherit;
 	text-align: left;
 }
 
@@ -750,8 +816,8 @@ and (max-width: 768px) {
 }
 
 @media only screen 
-and (max-width: 730px) {
-	@import '730';
+and (max-width: 675px) {
+	@import '675';
 }
 
 @media only screen 

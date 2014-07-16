@@ -1,7 +1,73 @@
 .header-super-contain {
-	padding: 0 2%;
+	padding: 0 1%;
+	float: none;
 	margin: 0 auto;
 	max-width: 2000px;
 	//background-color: $darkblue;
 	background-color: red;
+}
+
+#super-nav li{
+	font-size: 14px;
+}
+
+.search input[type='text'] {
+	width: 130px;
+}
+
+#home-contain {
+	width: 100%;
+	margin-top: 0;
+}
+
+.feature {
+	height: 200px;
+	position: relative;
+	margin-bottom: 10px;
+	
+	div {
+		width: 100%;
+		margin: 0;
+	}
+	
+	h2 {
+		font-size: 36px;
+		width: 63%;
+		margin: 10px 0 0 10px;
+	}
+	
+	p {
+		position: absolute;
+		bottom: 0;
+		padding: 3%;
+		background-color: rgba(255,255,255,0.7);
+	}
+	
+	button {
+		display: none;
+	}
+}
+
+aside {
+	width: 100%;
+	
+	ul {
+		margin: 10px;
+		
+		&:hover {
+		
+			div>i, h6, p {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.boxes {
+	width: 80%;
+	margin: 0 auto;
+	
+	.box {
+		width: 100%;
+	}
 }

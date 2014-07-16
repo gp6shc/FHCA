@@ -16,10 +16,27 @@
 	background-color: blue;
 }
 
+#nav-bar {
+	height: 150px;	
+}
+
+#slogan span {
+	font-size: 28px;
+	padding-left: 4px;
+}
+
+.main-nav {
+	padding-left: 15px;
+	
+	a {
+		font-size: 24px;
+	}
+}
+
 nav {
 	
 	&:hover {
-		min-height: 104px;
+		height: 104px;
 		
 		.main-nav {
 			opacity: 1;
@@ -31,7 +48,7 @@ nav {
 }
 
 #home-contain {
-	width: 88%;
+	width: 92%;
 	margin: 15px auto;
 }
 
