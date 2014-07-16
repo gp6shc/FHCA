@@ -4216,6 +4216,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/fhca\/img\/fhca_eldercare_florida_logo_00.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21901,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/fhca_eldercare_florida_logo_00.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/fhca_eldercare_florida_logo_00.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/fhca\/img\/fhca_elderly_1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -4355,15 +4366,15 @@
 		"shouldRunBless": 1,
 		"useLibsass": 0
 		},
-	"\/wp-content\/themes\/fhca\/scss\/600.scss": {
+	"\/wp-content\/themes\/fhca\/scss\/675.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 5,
 		"fileType": 4,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/scss\/600.scss",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/css\/600.css",
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/scss\/675.scss",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/css\/675.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
