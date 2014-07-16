@@ -24,7 +24,7 @@
 	<div id="fixed-nav"></div>
 	
 	<div id="header-wrapper">	
-		<header role="banner">
+		<header role="banner" id="nav-bar">
 			<div class="header-super-contain">	
 				<div id="super-nav">
 				    <ul>
@@ -39,16 +39,22 @@
 
 			<div class="header-contain clearfix">
 				<div class="site-branding">
-				    <a href="<?php echo home_url(); ?>">
-				    <!-- <img src="<?php bloginfo('stylesheet_directory')?>/img/logo.svg" onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png"" alt="60 Years of Caring"> -->
-				    <div style="height: 74px; width: 74px; border-radius: 50%; background-color: lightblue; display: inline-block; "></div>
-				    <span style="color: white;">60 Years</span>
+				    <a href="<?php echo home_url(); ?>"> <!-- onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png -->
+				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/logo.png'" alt="60 Years of Caring">
+				    <div id="slogan"><span>Elder Care<br/><span>Florida</span></span></div>
 				    </a>
+				</div>
+				
+				<div id="menu-button">
+					<span>MENU</span>
+					<div class="menu" id="top"></div>
+					<div class="menu" id="mid"></div>
+					<div class="menu" id="bottom"></div>
 				</div>
 				
 				<nav role="navigation">
 				    <ul class="main-nav" id="elder-care">
-				    	<li><a href="<?php echo home_url(); ?>/florida-elder-care/infographic">Florida & Elder Care</a>
+				    	<li><a href="<?php echo get_permalink(26); ?>"><?php echo get_the_title(10); ?></a>
 				    		<ul class="sub-nav">
 				        		<?php wp_list_pages('title_li=&child_of=10'); ?>
 				    		</ul>
@@ -56,7 +62,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="aging">
-				        <li><a href="<?php echo home_url(); ?>/aging-issues/balance">Aging Issues</a>
+				        <li><a href="<?php echo get_permalink(20); ?>"><?php echo get_the_title(12); ?></a>
 				        	<ul class="sub-nav">
 				    	    	<?php wp_list_pages('title_li=&child_of=12'); ?>
 				        	</ul>
@@ -65,7 +71,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="care-options">
-				        <li><a href="<?php echo home_url(); ?>/care-options/part-time-home-care">Care Options</a>
+				        <li><a href="<?php echo get_permalink(28); ?>"><?php echo get_the_title(14); ?></a>
 				        	<ul class="sub-nav">
 				    	    	<?php wp_list_pages('title_li=&child_of=14'); ?>
 				        	</ul>
@@ -74,7 +80,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="stories">
-				        <li><a href="<?php echo home_url(); ?>/stories/elder-care">Stories</a>
+				        <li><a href="<?php echo get_permalink(30); ?>"><?php echo get_the_title(16); ?></a>
 				        	<ul class="sub-nav">
 				        		<?php wp_list_pages('title_li=&child_of=16'); ?>
 				    		</ul>

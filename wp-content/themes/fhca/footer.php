@@ -30,9 +30,16 @@
 
 <?php wp_footer(); ?>
 <script type="text/javascript">
-window.addEventListener('load', function() {
-	FastClick.attach(document.body);
-}, false);
+	window.addEventListener('load', function() {
+		FastClick.attach(document.body);
+	}, false);
+	
+	var button = document.getElementById('menu-button');
+	var navBar = document.getElementById('nav-bar');
+	
+	button.addEventListener( 'touchstart', function() {
+		navBar.classList.toggle('height');
+	}, false);
 </script>
 </body>
 </html>
