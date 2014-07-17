@@ -10,11 +10,10 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
-<title>FHCA <?php wp_title('|', TRUE, 'left' ); ?></title>
-
-<?php if( is_front_page() ) {?>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
-<?}?>
+
+<title>Elder Care Florida<?php wp_title('|', true, 'left' ); ?></title>
+
 <script type="application/javascript" async src="<?php bloginfo('stylesheet_directory')?>/js/fastclick.min.js"></script>
 <?php wp_head(); ?>
 </head>
@@ -40,7 +39,7 @@
 			<div class="header-contain clearfix">
 				<div class="site-branding">
 				    <a href="<?php echo home_url(); ?>"> <!-- onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png -->
-				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/logo.png'" alt="60 Years of Caring">
+				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.png'" alt="60 Years of Caring">
 				    <div id="slogan"><span>Elder Care<br/><span>Florida</span></span></div>
 				    </a>
 				</div>
