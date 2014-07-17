@@ -16,6 +16,7 @@ $bodyfont: 'Crimson Text', serif;
 body {
 	background-color: white;
 	color: black;
+	min-width: 320px;
 }
 
 hr {
@@ -30,6 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: $titlefont;
 	font-weight: 700;
 	margin: 0;
+	padding: 0;
 }
 
 h1 {
@@ -47,15 +49,13 @@ h3 {
 	font-size: 46px;
 	color: $blue;
 	margin: 20px 0;
-	text-align: center;
 }
 
 h4 {
 	color: #5b668b;
 	font-family: $bodyfont;
-	font-size: 35px;
+	font-size: 29px;
 	font-weight: 400;
-	text-align: center;
 	margin: 20px 0;
 	padding: 0 85px;
 }
@@ -192,7 +192,7 @@ a {
 	width: 100%;
 	min-height: 150px;
 	position: absolute;
-	transition: height 0.3s linear;
+	transition: height 0.3s cubic-bezier(0.360, 0.060, 0.140, 1.450);
 }
 
 #super-nav {
@@ -421,7 +421,7 @@ nav {
 
 #home-contain {
 	width: 80%;
-	margin: 35px auto;
+	margin: 23px auto;
 }
 
 .feature {
@@ -429,12 +429,13 @@ nav {
 	margin-right: 2.05%;
 	height: 400px;
 	float: left;
+	position: relative;
 	background-size: cover;
 	background-position: center center;
 	
 	div {
-		width: 45%;
-		margin: 25px;
+		width: 50%;
+		margin: 23px;
 	}
 	
 	h2 {
@@ -447,6 +448,13 @@ nav {
 		color: black;
 		font-size: 16px;
 		background-color: rgba(255,255,255,0.5);
+		margin: 23px;
+		padding: 2%;
+	}
+	
+	button {
+		position: absolute;
+		bottom: 0;
 	}
 }
 
@@ -523,19 +531,20 @@ aside {
 	}
     
     button {
-		margin: 15px auto 0 auto;
+		margin: 37px auto 0 auto;
 		display: block;
 	}
 }
 
 .boxes {
 	width: 68%;
+	clear: left;
 }
 
 .box {
     width: 30.33%;
     height: 163px;
-    margin: 3% 3% 3% 0;
+    margin: 3% 3% 0 0;
     float: left;
     background-color: $blue;
 	background-size: cover;
@@ -548,6 +557,10 @@ aside {
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
+	    	background-color: rgba(231,191,82,0.5);
+		}
+		
+		&:focus {
 	    	background-color: rgba(231,191,82,0.5);
 		}
     }
@@ -567,111 +580,76 @@ aside {
 
 //======== GENERIC PAGE STYLE ========//
 
+#main {
+	position: relative;
+}
+
 .title {
 	width: 100%;
-	min-height: 260px;
-	background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 18%, rgba(246,252,255,1) 32%, rgba(211,239,254,1) 51%, rgba(161,206,242,1) 74%, rgba(119,179,231,1) 85%, rgba(78,148,219,1) 99%, rgba(78,148,219,1) 100%);
 	text-align: center;
-	line-height: 260px;
 	
 }
 
-#page-nav-background {
-	background-image: linear-gradient(rgba(145,177,221,1) 33.33%, rgba(177,195,221,1) 33.34%, rgba(177,195,221,1) 66.66%, rgba(194,206,221,1) 66.67%, rgba(194,206,221,1) 100%);
-	position: absolute;
-	height: 180px;
-	width: 100%;
-	z-index: 1;
-}
-
-.page-nav {
-	width: 100%;
-	min-height: 60px;
-	background-color: rgba(0,0,0,0);
-	position: relative;
-	z-index: 10;
-	display: flex;
-	justify-content: center;
-	-webkit-flex-flow: row wrap;
-	
-	li {
-		height: 60px;
-		margin: 0;
-		list-style-type: none;
-		
-		&:hover {
-			background-color: rgba(255,255,255,0.5); 			
-			
-			a {
-				color: $darkblue;
-			}
-		}
-	}
-	
-	a {
-		display: block;
-		padding: 0 18px;
-		line-height: 60px;
-		color: white;
-		font-family: $titlefont;
-		font-weight: 400;
-		font-size: 20px;
-		text-decoration: none;
-		
-	}
+.icon-fa {
+	display: block;
+	color: $blue;
+	text-align: center;
 }
 
 .side-nav {
-	position: fixed;
-	color: $blue;
-	width: auto;
-	background-color: rgba(145,177,221,0.3);
-	z-index: 30;
-	top: 150px;
+	width: 20%;
+	height: 2020px;
+	float: left;
+	background-color: $blue;
+	top: 0;
 	left: -15px;
-	border-top: 2px solid rgba(145,177,221,0.1);
-	border-bottom: 2px solid rgba(145,177,221,0.1);
 	
 	a {
+		color: white;
 		font-size: 18px;
-		padding: 10px 10px 10px 25px;
+		letter-spacing: 0.8px;
+		padding: 10px 20px 10px 45px;
 		display: block;
 
 		&:hover {
-			background-color: rgba(145,177,221,0.6);
-			text-decoration: none;
-			
-		}	
+			background-color: rgba(145,177,221,0.8);
+			text-decoration: none;	
+		}
 	}
 	
 	li {
 		list-style-type: none;
 		margin: 0;
-		
 	}
 	
 	.current_page_item {
-    	background-color: white;
+    	background-color: $lightblue;
     
 		a {
-    		color: $darkblue;
 			font-weight: 700;
-    	
-			&:hover {
-    			background-color: white;
-			}
 		}
 	}
 }
 
-
+.side-hero {
+	width: 20%;
+	position: absolute;
+	height: 2020px;
+	right: 0;
+	background: #4a525a;
+	
+	img {
+		margin: 0;
+	}
+}
 
 //======== USER GENERATED CONTENT ========//
 //===== primarily set in global tags =====//
 
 .entry-content {
 	padding: 35px 0;
-	position: relative;
+	width: 60%;
+	float: left;
 	background-color: white;
 	z-index: 10;
 	
@@ -698,7 +676,7 @@ aside {
 }
 
 #contain {
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -771,6 +749,7 @@ footer {
 	width: 100%;
 	background-color: $darkblue;
 	color: white;
+	position: relative;
 	
 	div {
 		width: 80%;
@@ -800,6 +779,20 @@ footer {
 				color: white;
 			}
 		}	
+	}
+
+}
+
+#sponsor {
+	margin: 239px 0 0 0;
+	
+	img {
+		margin: 10px 0 0 0;
+		width: 191px;
+	}
+	
+	a {
+		display: block;
 	}
 }
 
