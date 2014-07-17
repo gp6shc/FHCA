@@ -71,7 +71,7 @@ nav {
 		border: 0;
 		height: 2px;
 		margin: 10px 0;
-		background-image: linear-gradient(left, rgba(255,255,255,0) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
+		background-image: linear-gradient( to right, rgba(255,255,255,0) 60%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
 	}
 }
 
@@ -89,10 +89,10 @@ aside {
 
 .boxes {
 	width: 40%;
+}
 	
-	.box {
-		width: 97%;
-	}
+.box {
+    width: 97%;
 }
 
 footer {
