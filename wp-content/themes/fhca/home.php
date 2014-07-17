@@ -56,6 +56,7 @@ get_header(); ?>
 					<p><?php echo the_post_excerpt_by_id(47,20);?></p>
 					</a>
 				</li>
+<!--
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(49); ?>">
 					<div class="fa-stack fa-2x">	
@@ -66,11 +67,12 @@ get_header(); ?>
 					<p><?php echo the_post_excerpt_by_id(49,20);?></p>
 					</a>
 				</li>
+-->
 			</ul>
-				<button><a href="<?php echo get_permalink(51); ?>">See More</a></button>
+				<button><a href="<?php echo get_permalink(49); ?>">See More</a></button>
 		</aside>
 		
-		<div class="boxes">
+		<div class="boxes clearfix">
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);" >
 			    <a href="<?php echo get_permalink(33); ?>"><span><?php echo get_the_title(33); ?></span></a>
 			</div>

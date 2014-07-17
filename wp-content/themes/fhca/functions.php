@@ -66,6 +66,9 @@ function fhca_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+	
+	// Enables post thumbnails for pages
+	add_theme_support( 'post-thumbnails', array( 'page' ) );
 }
 endif; // fhca_setup
 add_action( 'after_setup_theme', 'fhca_setup' );

@@ -23,8 +23,13 @@
 			<ul>
 				<h5>Stories</h5>
 				<?php wp_list_pages('title_li=&child_of=16'); ?>
+				<div id="sponsor">
+					<a href="http://www.fhca.org/" target="_blank"><h5>Sponsored By:</h5>
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.png'" alt="60 Years of Caring"></a>
+				</div>
 			</ul>
-		</div>		
+		</div>
+		
 	</footer>
 </div><!-- #page -->
 
