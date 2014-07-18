@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-	font-size: 46px;
+	font-size: 36px;
 	color: $blue;
 	margin: 20px 0;
 }
@@ -57,7 +57,6 @@ h4 {
 	font-size: 29px;
 	font-weight: 400;
 	margin: 20px 0;
-	padding: 0 85px;
 }
 
 h5 {
@@ -185,6 +184,7 @@ a {
 	position: relative;
 	height: 150px;
 	z-index: 20;
+	transform:translateZ(1px);
 }
 
 #nav-bar {
@@ -582,12 +582,14 @@ aside {
 
 #main {
 	position: relative;
+	width: 100%;
 }
 
 .title {
 	width: 100%;
 	text-align: center;
-	
+	margin: 23px 0;
+	line-height: 1;	
 }
 
 .icon-fa {
@@ -598,22 +600,23 @@ aside {
 
 .side-nav {
 	width: 20%;
-	height: 2020px;
-	float: left;
-	background-color: $blue;
+	height: 100%;
+	padding-top: 100px;
+	position: absolute;
 	top: 0;
-	left: -15px;
+	left: 0;
+	background-color: $darkblue;
 	
 	a {
 		color: white;
 		font-size: 18px;
 		letter-spacing: 0.8px;
-		padding: 10px 20px 10px 45px;
+		padding: 16px 16px 16px 25%;
 		display: block;
 
 		&:hover {
 			background-color: rgba(145,177,221,0.8);
-			text-decoration: none;	
+			text-decoration: none;
 		}
 	}
 	
@@ -633,25 +636,71 @@ aside {
 
 .side-hero {
 	width: 20%;
-	position: absolute;
-	height: 2020px;
+	height: 100%;
+	position: fixed;
 	right: 0;
-	background: #4a525a;
+	top: 0;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.3;
 	
 	img {
 		margin: 0;
 	}
 }
 
+//======== LANDING PAGE STYLE ========//
+
+.landing-grid {
+	max-width: 940px;
+	margin: 23px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grid-item {
+	width: 33%;
+	min-width: 284px;
+	margin: 3px 3px 0 0;
+	
+	a {
+		display: block;
+		background-color: #eff4f6;
+		padding: 15px 0;
+		
+		&:hover {
+			text-decoration: none;
+			background-color: #dce7ec;
+		}
+	}
+	
+	.title {
+		height: 72px;
+		display: table;
+		
+		h3 {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0 3px;
+		}
+	}
+}
+
+
 //======== USER GENERATED CONTENT ========//
 //===== primarily set in global tags =====//
-
 .entry-content {
+	min-height: 800px;
+}
+
+
+article {
 	padding: 35px 0;
 	width: 60%;
-	float: left;
+	margin: 0 20%;
+	position: relative;
 	background-color: white;
-	z-index: 10;
 	
 	ul {
 		padding-left: 25px;
@@ -673,23 +722,36 @@ aside {
 		font-weight: 700;		
 	}
 	
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 #contain {
 	width: 90%;
 	margin: 0 auto;
+	
+	&.search-results {
+		
+		article {
+			margin: 0 0 0 5%;
+		}
+	}
 }
 
+
+
 .hentry {
-	margin: 0;	
+		
 }
 
 #more-info {
 	margin: 15px 0 -35px 0;
 	background-color: #e9e8e8;
 	text-align: center;
-	width: 100%;
-	padding: 35px 0;
+	width: 95%;
+	padding: 35px 2.5%;
 	
 	h3 {
 	
@@ -702,7 +764,8 @@ aside {
 	
 	li {
 		list-style-type: none;
-		margin: 0 0 15px 0;	
+		margin: 0 0 20px 0;
+		padding: 0;
 		font-size: 26px;
 		line-height: 100%;
 		
@@ -747,9 +810,10 @@ aside {
 
 footer {
 	width: 100%;
-	background-color: $darkblue;
+	background-color: $blue;
 	color: white;
 	position: relative;
+	transform:translateZ(1px);
 	
 	div {
 		width: 80%;
@@ -794,6 +858,10 @@ footer {
 	a {
 		display: block;
 	}
+}
+
+#mobile-footer {
+	display: none;	
 }
 
 //======== MEDIA QUERIES ========//
