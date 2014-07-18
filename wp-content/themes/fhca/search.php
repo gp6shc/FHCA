@@ -15,7 +15,7 @@ get_header(); ?>
 			<header class="page-header">
 				<h2 style="margin: 25px 0 25px -25px; text-align: center;"><?php printf( __( 'Searching for: %s', 'fhca' ), '<span>' . get_search_query() . '</span>' ); ?></h2>
 			</header><!-- .page-header -->
-			<div id="contain">
+			<div id="contain" class="search-results">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

@@ -28,8 +28,8 @@
 				<div id="super-nav">
 				    <ul>
 				    	<!-- missing </li> tags to counter inline-block space -->
-				    	<li><a href="">Media Center</a>
-				    	<li><a href="">Contact</a>
+				    	<li><a href="<?php echo get_permalink(253); ?>">Media Center</a>
+				    	<li><a href="<?php echo get_permalink(255); ?>">Contact</a>
 				    	<li class="search">
 				    	    <?php get_search_form(); ?>
 				    </ul>
@@ -53,7 +53,7 @@
 				
 				<nav role="navigation">
 				    <ul class="main-nav" id="elder-care">
-				    	<li><a href="<?php echo get_permalink(26); ?>"><?php echo get_the_title(10); ?></a>
+				    	<li><a href="<?php echo get_permalink(10); ?>"><?php echo get_the_title(10); ?></a>
 				    		<ul class="sub-nav">
 				        		<?php wp_list_pages('title_li=&child_of=10'); ?>
 				    		</ul>
@@ -61,7 +61,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="aging">
-				        <li><a href="<?php echo get_permalink(20); ?>"><?php echo get_the_title(12); ?></a>
+				        <li><a href="<?php echo get_permalink(12); ?>"><?php echo get_the_title(12); ?></a>
 				        	<ul class="sub-nav">
 				    	    	<?php wp_list_pages('title_li=&child_of=12'); ?>
 				        	</ul>
@@ -70,7 +70,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="care-options">
-				        <li><a href="<?php echo get_permalink(28); ?>"><?php echo get_the_title(14); ?></a>
+				        <li><a href="<?php echo get_permalink(14); ?>"><?php echo get_the_title(14); ?></a>
 				        	<ul class="sub-nav">
 				    	    	<?php wp_list_pages('title_li=&child_of=14'); ?>
 				        	</ul>
@@ -79,7 +79,7 @@
 				    </ul>
 				    
 				    <ul class="main-nav" id="stories">
-				        <li><a href="<?php echo get_permalink(30); ?>"><?php echo get_the_title(16); ?></a>
+				        <li><a href="<?php echo get_permalink(16); ?>"><?php echo get_the_title(16); ?></a>
 				        	<ul class="sub-nav">
 				        		<?php wp_list_pages('title_li=&child_of=16'); ?>
 				    		</ul>
