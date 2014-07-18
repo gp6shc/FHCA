@@ -20,6 +20,10 @@
 	margin-top: 0;
 }
 
+h1 {
+	font-size: 44px;
+}
+
 .feature {
 	height: 200px;
 	position: relative;
@@ -74,10 +78,57 @@ aside {
 	margin: 3% 3% 0 3%;
 }
 
-#sponsor {
-	margin: 20px 0 0 0;
+.side-nav {
+	display: none;
 	
-	h5 {
-		margin-left: 0;
+	a {
+		padding: 12px 12px 12px 6.666%;
 	}
 }
+
+.landing-grid {
+	max-width: 940px;
+	margin: 0;
+	display: block;
+}
+
+article {
+	width: 100%;
+	margin: 23px 0;
+}
+
+.grid-item {
+	width: 1.5%;
+	min-width: 97%;
+}
+
+#more-info {
+	margin: 15px 0 0 0;
+}
+
+footer {
+	display: none;	
+}
+
+
+#mobile-footer {
+	display: block;
+	height: 150px;
+	margin: 0;
+	
+	#sponsor {
+		margin: 0;
+		width: 100%;
+	
+		h5 {
+			margin-top: 20px;
+			color: white;
+		}
+		
+		a {
+			margin: 0 auto;
+		}
+	}
+}
+
+

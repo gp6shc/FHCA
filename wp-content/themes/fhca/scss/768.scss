@@ -61,6 +61,23 @@ aside {
 	width: 97%;
 }
 
+.side-nav {
+	width: 30%;
+	
+	a {
+		padding: 12px 12px 12px 6.666%;
+	}
+}
+
+article {
+	width: 70%;
+	margin: 0 0 0 30%;
+}
+
+.side-hero {
+	display: none;
+}
+
 .entry-content {
 	
 	div {
@@ -98,4 +115,8 @@ footer {
 		 width: 214px;
 		 padding: 0;
 	 }
+}
+
+#sponsor {
+	margin: 232px 0 0 0;
 }
