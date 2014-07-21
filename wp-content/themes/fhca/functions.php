@@ -68,7 +68,7 @@ function fhca_setup() {
 	) ) );
 	
 	// Enables post thumbnails for pages
-	add_theme_support( 'post-thumbnails', array( 'page' ) );
+	add_theme_support( 'post-thumbnails', array( 'page', 'post' ) );
 }
 endif; // fhca_setup
 add_action( 'after_setup_theme', 'fhca_setup' );
@@ -108,7 +108,7 @@ function fhca_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'fhca_scripts' );
 
-/* Removes the top level pages from the search results, or any particular page ID that needs to removed from search results*/
+/* Removes the top level pages from the search results, or any particular page ID that needs to removed from internal search results*/
 
 function jp_search_filter( $query ) {
   if ( $query->is_search && $query->is_main_query() ) {
@@ -117,7 +117,7 @@ function jp_search_filter( $query ) {
 }
 add_filter( 'pre_get_posts', 'jp_search_filter' );
 
-/* Add excerpt option to pages for the home page summariess*/
+/* Add excerpt option to pages for the home page summaries */
 add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
      add_post_type_support( 'page', 'excerpt' );
@@ -139,6 +139,7 @@ function the_post_excerpt_by_id($ID, $limit) {
     echo $excerpt;
 }
 
+// Font Awesome icon associations for the pages
 function the_page_fa_icon($pageID) {
 	switch ($pageID) {
 		    case 20: ?>

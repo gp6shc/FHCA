@@ -33,8 +33,10 @@
 	</footer>
 	<footer id="mobile-footer">
 		<div id="sponsor">
-			<a href="http://www.fhca.org/" target="_blank"><h5>Sponsored by:</h5>
-			<img src="<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.png'" alt="60 Years of Caring"></a>
+			<a href="http://www.fhca.org/" target="_blank">
+				<h5>Sponsored by:</h5>
+				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.png'" alt="60 Years of Caring">
+			</a>
 		</div>
 	</footer>
 </div><!-- #page -->
