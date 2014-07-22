@@ -9,19 +9,19 @@
 	<footer role="contentinfo">
 		<div>
 			<ul>
-				<h5>Florida & Elder Care</h5>
+				<h5><a href="<?php echo get_permalink(10); ?>"><?php echo get_the_title(10); ?></h5>
 				<?php wp_list_pages('title_li=&child_of=10'); ?>
 			</ul>
 			<ul>
-				<h5>Aging Issues</h5>
+				<h5><a href="<?php echo get_permalink(12); ?>"><?php echo get_the_title(12); ?></h5>
 				<?php wp_list_pages('title_li=&child_of=12'); ?>
 			</ul>
 			<ul>
-				<h5>Care Options</h5>
+				<h5><a href="<?php echo get_permalink(14); ?>"><?php echo get_the_title(14); ?></h5>
 				<?php wp_list_pages('title_li=&child_of=14'); ?>
 			</ul>
 			<ul>
-				<h5>Stories</h5>
+				<h5><a href="<?php echo get_permalink(16); ?>"><?php echo get_the_title(16); ?></h5>
 				<?php wp_list_pages('title_li=&child_of=16'); ?>
 				<div id="sponsor">
 					<a href="http://www.fhca.org/" target="_blank"><h5>Sponsored by:</h5>

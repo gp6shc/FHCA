@@ -6,15 +6,22 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 
-		<div class="entry-meta">
-			<?php fhca_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<div class="postmeta">
+			<span>Posted on <?php the_time('l, F j, Y'); ?></span> | <span><?php the_category(', '); ?></span>
+		</div>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php if ( has_post_thumbnail() ) {?>
+			<?php the_post_thumbnail('large'); ?>
+		<?}else{?>
+			<hr>
+	<?php }
+		
+		the_content(); ?>
+		
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'fhca' ),
@@ -49,12 +56,6 @@
 
 			} // end check for categories on this blog
 
-			printf(
-				$meta_text,
-				$category_list,
-				$tag_list,
-				get_permalink()
-			);
 		?>
 
 		<?php edit_post_link( __( 'Edit', 'fhca' ), '<span class="edit-link">', '</span>' ); ?>

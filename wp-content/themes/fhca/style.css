@@ -280,7 +280,17 @@ aside button { margin: 17px auto 0 auto; display: block; }
 .grid-item .title { height: 72px; display: table; margin: 0 0 23px 0; }
 .grid-item .title h3 { display: table-cell; vertical-align: middle; padding: 0 3px; }
 
-.entry-content { min-height: 800px; }
+.post-results .title { text-align: left; }
+.post-results img { max-height: 300px; width: auto; display: block; margin: 20px auto; }
+.post-results .read-more-link { font-size: 22px; font-weight: 400; }
+.post-results .read-more-link i { font-size: 16px; }
+
+.page-results-nav { width: 60%; margin: 35px auto; display: block; background-color: white; }
+.page-results-nav div { display: block; width: auto; color: #21376e; }
+
+.newer-posts { float: right; }
+
+.older-posts { float: left; display: block; }
 
 article { padding: 35px 0 0 0; width: 60%; margin: 0 20%; position: relative; background-color: white; }
 article ul { padding: 0; }
