@@ -22,12 +22,12 @@ get_header(); ?>
 
 			<div class="side-hero" style="background-color: white; background-image: url(<?php echo $thumb_url; ?>)"></div>
 				<?php }else{ ?>
-			<div class="side-hero" style="background-color: #4a525a; opacity: 1;"></div>
+			<div class="side-hero" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/noise.png); background-size: contain; background-color: #e9e3d3; opacity: 1;"></div>
 				<?}?>
 				
 			<?php endwhile; // end of the loop. ?>
 			
-			<div class="side-nav" style="background-color: #4a525a;">
+			<div class="side-nav" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/noise.png); background-size: contain; background-color: #e9e3d3; opacity: 1;"></div>
 				
 			</div>
 		</main><!-- #main -->

@@ -14,6 +14,10 @@ get_header(); ?>
 				<h1><?php the_title();?></h1>
 			</div>
 			
+			<div class="landing-content">
+				<p><?php echo get_post( get_the_ID() )->post_content; ?></p>
+			</div>
+			
 			<div class="landing-grid">
 			
 			<?php
@@ -52,5 +56,22 @@ get_header(); ?>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+<?php if (is_page(10)): ?>
+	<script>
+		var oneRow = document.getElementById('one-line');
+		parentsGridItem = oneRow.parentNode.parentNode.parentNode;
+		parentsGridItem.className += " one-line";
+	</script>
+<?php endif ?>
+
 
 <?php get_footer(); ?>
+
+
+
+
+
+
+
+
+

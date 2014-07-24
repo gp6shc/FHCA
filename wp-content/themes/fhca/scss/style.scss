@@ -76,6 +76,7 @@ p {
 	font-size: 24px;
 	color: #6d6e71;
 	margin: 0;
+	margin-bottom: 23px;
 }
 
 span {
@@ -323,7 +324,7 @@ nav {
 	transition: height 0.3s cubic-bezier(0.360, 0.060, 0.140, 1.450);
 	
 	&:hover {
-		height: 401px;
+		height: 330px;
 		
 		.main-nav {
 			opacity: 0.5;
@@ -431,22 +432,27 @@ nav {
 	background-position: center center;
 	
 	div {
-		width: 50%;
+		width: 93%;
 		margin: 23px;
 	}
 	
 	h2 {
-		color: $blue;
+		color: $darkblue;
 		font-size: 56px;
-		line-height: 1;
+		line-height: 1.1;
+		background-color: rgba(255,255,255,0.5);
 	}
 	
 	p {
 		color: black;
-		font-size: 16px;
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 1.2;
+		width: 30%;
 		background-color: rgba(255,255,255,0.5);
-		margin: 7px;
+		margin: 0;
 		padding: 10px;
+		padding-top: 15px;
 	}
 	
 	button {
@@ -555,11 +561,7 @@ aside {
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
-	    	background-color: rgba(231,191,82,0.5);
-		}
-		
-		&:focus {
-	    	background-color: rgba(231,191,82,0.5);
+	    	background-color: rgba(73,81,89,0.63);
 		}
     }
     
@@ -651,7 +653,7 @@ aside {
 
 .landing-grid {
 	max-width: 940px;
-	margin: 23px auto;
+	margin: 46px auto;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -686,6 +688,20 @@ aside {
 	}
 }
 
+.one-line {
+	margin: 3px 160px 0 160px;
+}
+
+.landing-content {
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 23px;
+	display: block;
+	
+	a {
+		font-weight: 700;
+	}
+}
 //======== POST DISPLAY PAGE STYLE ========//
 
 .post-results {
@@ -747,6 +763,8 @@ article {
 	
 	ul {
 		padding: 0;
+		margin-left: 23px;
+		list-style-position: outside;
 		
 		&:after {
 			content: "";
@@ -755,10 +773,21 @@ article {
 		}
 	}
 	
+	ul ul {
+		margin-right: -20px;
+		
+		li {
+			list-style-type: disc;
+		}
+	}
+	
 	li {
-		padding: 10px 0 0 13px;
+		padding: 10px 0 0 0;
 		list-style-type: square;
-		list-style-position: inside;
+	}
+	
+	ol li {
+		list-style-type: decimal;
 	}
 	
 	a {
@@ -786,7 +815,7 @@ article {
 #more-info {
 	margin: 15px 0 0 0;
 	padding: 40px 2.5%;
-	background-color: #e9e8e8;
+	background-color: #faf7f7;
 	text-align: center;
 	
 	h3 {
@@ -883,7 +912,7 @@ footer {
 }
 
 #sponsor {
-	margin: 239px 0 0 0;
+	margin: 127px 0 0 0;
 	
 	h5 {
 		font-size: 16px;

@@ -7,8 +7,12 @@
 get_header()?>
 	
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main">			
+			<div class="landing-content">
+				<p><?php echo get_post(30)->post_content; ?></p>
+			</div>
 			<div class="entry-content">
+			
 			<?php // Define custom query parameters
 			
 			   $custom_query_args = array(
@@ -50,8 +54,6 @@ get_header()?>
 							
 						</article>
 			
-		
-
 			<?php	endwhile;
 				endif; ?>
 				

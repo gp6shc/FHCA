@@ -28,7 +28,7 @@
 				<div id="super-nav">
 				    <ul>
 				    	<!-- missing </li> tags to counter inline-block space -->
-				    	<li><a href="<?php echo get_permalink(253); ?>">Media Center</a>
+				    	<!-- <li><a href="<?php echo get_permalink(253); ?>">Media Center</a> -->
 				    	<li><a href="<?php echo get_permalink(255); ?>">Contact</a>
 				    	<li class="search">
 				    	    <?php get_search_form(); ?>

@@ -4291,6 +4291,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/wp-content\/themes\/fhca\/img\/noise.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21214,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/noise.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/img\/noise.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/fhca\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4452,7 +4463,7 @@
 		"outputAbbreviatedPath": "\/wp-content\/themes\/fhca\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 2,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
@@ -4491,6 +4502,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/fhca\/sidebar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/fhca\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/fhca\/single.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -4517,6 +4537,83 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-1024x990.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 199892,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-1024x990.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-1024x990.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-150x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7832,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-300x290.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24573,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-300x290.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention-300x290.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 674641,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_falls_prevention.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-150x150.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9018,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-150x150.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-150x150.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-175x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19438,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-175x300.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean-175x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 285695,
+		"inputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/uploads\/2014\/07\/fhca_ecf_historical_floridean.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/wp-content\/uploads\/2014\/07\/whitehall-01-1024x717.jpg": {
 		"fileType": 16384,

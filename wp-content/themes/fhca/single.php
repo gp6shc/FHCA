@@ -21,7 +21,6 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-			<?php get_sidebar(); ?>
 		</div>
 		<?php endwhile; // end of the loop. ?>
 

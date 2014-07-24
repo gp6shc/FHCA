@@ -167,7 +167,7 @@ function the_page_fa_icon($pageID) {
 		    	</div>
 		<?php break;
 		    case 33: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-4x" id="one-line">	
 		    		<i class="fa fa-pencil-square-o fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
