@@ -80,7 +80,7 @@ get_header(); ?>
 			    <a href="<?php echo get_permalink(26); ?>"><span>Infographics</span></a>
 			</div>
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);">
-			    <a href="<?php echo get_permalink(72); ?>"><span>Advocating for Your Parent</span></a>
+			    <a href="<?php echo get_permalink(76); ?>"><span>Advocating for Your Parent</span></a>
 			</div>
 		</div>
 	</div>	

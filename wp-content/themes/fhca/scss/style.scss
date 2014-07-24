@@ -437,7 +437,7 @@ nav {
 	}
 	
 	h2 {
-		color: $darkblue;
+		color: $blue;
 		font-size: 56px;
 		line-height: 1.1;
 		background-color: rgba(255,255,255,0.5);
@@ -446,7 +446,6 @@ nav {
 	p {
 		color: black;
 		font-size: 19px;
-		font-weight: 700;
 		line-height: 1.2;
 		width: 30%;
 		background-color: rgba(255,255,255,0.5);
@@ -527,6 +526,7 @@ aside {
 			font-size: 16px;
 			opacity: 1;
 			transition: opacity 0.2s ease;
+			margin: 0;
 		}
 		
 		&:hover {
