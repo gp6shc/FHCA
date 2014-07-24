@@ -432,7 +432,7 @@ nav {
 	background-position: center center;
 	
 	div {
-		width: 93%;
+		width: 565px;
 		margin: 23px;
 	}
 	
@@ -440,6 +440,7 @@ nav {
 		color: $blue;
 		font-size: 56px;
 		line-height: 1.1;
+		padding: 10px;
 		background-color: rgba(255,255,255,0.5);
 	}
 	
@@ -447,11 +448,11 @@ nav {
 		color: black;
 		font-size: 19px;
 		line-height: 1.2;
-		width: 30%;
+		width: 35%;
 		background-color: rgba(255,255,255,0.5);
 		margin: 0;
 		padding: 10px;
-		padding-top: 15px;
+		padding-top: 0;
 	}
 	
 	button {
@@ -558,10 +559,12 @@ aside {
 		display: block;
 		height: 163px;
 		line-height: 163px;
+	    color: white;
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
-	    	background-color: rgba(73,81,89,0.63);
+	    	background-color: rgba(233,227,211,0.63);
+	    	color: $blue;
 		}
     }
     
@@ -569,7 +572,6 @@ aside {
 		font-size: 28px;
 		font-weight: 700;
 		text-align: center;
-	    color: white;
 	    margin: 8%;
 	    display: inline-block;
 		vertical-align: middle;
