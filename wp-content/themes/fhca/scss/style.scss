@@ -551,19 +551,22 @@ aside {
     height: 163px;
     margin: 3% 3% 0 0;
     float: left;
+    direction: block;
     background-color: $blue;
 	background-size: cover;
 	background-position: right center;
     
     a {
-		display: block;
+		display: table;
+		width: 100%;
 		height: 163px;
-		line-height: 163px;
+		text-align: center;
 	    color: white;
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
 	    	background-color: rgba(233,227,211,0.63);
+	    	text-decoration: none;
 	    	color: $blue;
 		}
     }
@@ -571,11 +574,9 @@ aside {
     span {
 		font-size: 28px;
 		font-weight: 700;
-		text-align: center;
 	    margin: 8%;
-	    display: inline-block;
-		vertical-align: middle;
-		line-height: normal;
+	    display: table-cell;
+	    vertical-align: middle;
     }
 
 }
