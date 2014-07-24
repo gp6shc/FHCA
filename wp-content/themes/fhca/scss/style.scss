@@ -249,6 +249,7 @@ a {
 		border: 2px solid $blue;
 		box-sizing: border-box;
 		transition: border 0.7s ease;
+		vertical-align: middle;
 		
 		&::-webkit-input-placeholder { 
 			color: $darktext;			
@@ -259,10 +260,18 @@ a {
 		}
 	}
 	
-	input[type='image'] {
-		vertical-align: top;
-		width: 30px;
+	input[type='submit'] {
+		font-family: FontAwesome;
+		font-size: 1.3em;
 		height: 30px;
+		width: 30px;
+		border: none;
+		cursor: pointer;
+		color: white;
+		background-color: inherit;
+		position: relative;
+		vertical-align: top;
+		display: inline-block;
 	}
 }
 
@@ -432,32 +441,31 @@ nav {
 	background-position: center center;
 	
 	div {
-		width: 565px;
-		margin: 23px;
+		width: 100%;
 	}
 	
 	h2 {
-		color: $blue;
-		font-size: 56px;
+		color: white;
+		font-size: 36px;
 		line-height: 1.1;
-		padding: 10px;
-		background-color: rgba(255,255,255,0.5);
+		padding: 23px;
+		background-color: rgba(33,55,110,0.8);
 	}
 	
 	p {
-		color: black;
+		color: #555555;
 		font-size: 19px;
 		line-height: 1.2;
-		width: 35%;
-		background-color: rgba(255,255,255,0.5);
-		margin: 0;
-		padding: 10px;
-		padding-top: 0;
+		width: 25%;
+		background-color: rgba(255,255,255,0.8);
+		margin: 30px 0;
+		padding: 23px;
 	}
 	
 	button {
 		position: absolute;
 		bottom: 0;
+		margin: 0 0 10px 30px;
 	}
 }
 

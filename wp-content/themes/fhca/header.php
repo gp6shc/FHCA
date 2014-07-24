@@ -44,11 +44,9 @@
 				    </a>
 				</div>
 				
-				<div id="menu-button">
-					<span>MENU</span>
-					<div class="menu" id="top"></div>
-					<div class="menu" id="mid"></div>
-					<div class="menu" id="bottom"></div>
+				<div class="fa-stack fa-2x" id="menu-button">
+					<i class="fa fa-bars fa-stack-1x"></i>
+					<i class="fa fa-times fa-stack-1x hidden"></i>
 				</div>
 				
 				<nav role="navigation">

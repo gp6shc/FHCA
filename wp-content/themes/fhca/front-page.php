@@ -9,7 +9,7 @@ get_header(); ?>
 		<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_group_1.jpg);">
 			<div>
 				<?php $id = 6; $post_object = get_post( $id ); echo $post_object->post_content; ?>
-				<button><a href="<?php echo get_permalink(30); ?>">See Stories</a></button>
+				<button><a href="<?php echo get_permalink(33); ?>">See Report</a></button>
 			</div>
 		</div>
 		

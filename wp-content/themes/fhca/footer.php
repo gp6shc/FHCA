@@ -49,9 +49,19 @@
 	
 	var button = document.getElementById('menu-button');
 	var navBar = document.getElementById('nav-bar');
+	var	faNavIcon = button.children;
 	
 	button.addEventListener( 'touchstart', function() {
 		navBar.classList.toggle('height');
+		faNavIcon[0].classList.toggle('hidden');
+		faNavIcon[1].classList.toggle('hidden');
+		
+	}, false);
+	
+	button.addEventListener( 'mousedown', function() {
+		navBar.classList.toggle('height');
+		faNavIcon[0].classList.toggle('hidden');
+		faNavIcon[1].classList.toggle('hidden');
 	}, false);
 </script>
 </body>

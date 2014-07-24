@@ -244,9 +244,9 @@ function the_page_fa_icon($pageID) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
-		    case 64: ?>
+		    case 255: ?>
 		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-dollar fa-stack-1x"></i>
+		    		<i class="fa fa-envelope fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
