@@ -298,6 +298,12 @@ function the_page_fa_icon($pageID) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
+			case 388: ?>
+		    	<div class="fa-stack fa-4x">	
+		    		<i class="fa fa-lines fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
 		    default: ?>
 		    	<div class="fa-stack fa-4x">	
 		    		<i class="fa fa-cube fa-stack-1x"></i>

@@ -302,11 +302,17 @@ a {
     
     span {
     	display: inline-block;
-    	line-height: 1;
+    	line-height: 0.6;
     	vertical-align: middle;
     	font-size: 30px;
     	font-weight: 700;
     	padding-left: 12px;
+    	
+    	em {
+	    	font-style: normal;
+	    	font-size: 16px;
+	    	line-height: 16px;
+    	}
     	
     	span {
 	    	font-weight: 400;
@@ -454,7 +460,7 @@ nav {
 	}
 	
 	p {
-		color: rgba(0,0,0,1);
+		color: rgba(85,85,85,1);
 		font-size: 17px;
 		line-height: 1.2;
 		text-align: left;
@@ -497,7 +503,7 @@ nav {
 		color: rgba(255,255,255,0);
 		};
 	100% {
-		color: rgba(0,0,0,1);
+		color: rgba(85,85,85,1);
 	};
 }
 
@@ -607,8 +613,9 @@ aside {
     
     a {
 		display: table;
-		width: 100.1%;
+		width: 91%;
 		height: 163px;
+		padding: 0 5%;
 		text-align: center;
 	    color: white;
 		background-color: rgba(33,55,110,0.4);
@@ -621,7 +628,7 @@ aside {
     }
     
     span {
-		font-size: 28px;
+		font-size: 25px;
 		font-weight: 700;
 	    margin: 8%;
 	    display: table-cell;
@@ -794,11 +801,12 @@ aside {
 
 .newer-posts {
 	float: right;
+	margin-right: 15px;
 }
 
 .older-posts {
 	float: left;
-	display: block;
+	margin-left: 15px;
 }
 
 //======== USER GENERATED CONTENT ========//

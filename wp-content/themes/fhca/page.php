@@ -30,11 +30,12 @@ get_header(); ?>
 			
 			<div class="side-nav">
 				<?php 
-					if(wp_list_pages('child_of='.$post->ID.'&echo=0&exclude=2')) {
+					if( wp_list_pages('child_of='.$post->ID.'&echo=0&exclude=2') ) {
 						wp_list_pages('title_li=&child_of='.$post->ID.'&exclude=2');
-					} elseif(get_the_title($post->post_parent) != the_title(' ' , ' ',false)) {
+					} elseif( get_the_title($post->post_parent) != the_title(' ' , ' ',false) ) {
 						wp_list_pages('child_of='.$post->post_parent.'&title_li=&exclude=2');
 					}
+					
 				?>
 			</div>
 		</main><!-- #main -->

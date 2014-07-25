@@ -21,10 +21,19 @@ get_header(); ?>
 				    	?>
 				    </div>
 				    
-					<p><?php echo get_post( get_the_ID() )->post_content; ?></p>
-				    
+					<p><?php 
+						$post_id = 255;
+						global $post;
+						$post = &get_post($post_id);
+						setup_postdata( $post );
+						the_content();
+						wp_reset_postdata( $post );
+						
+					?></p>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
+		    <?php get_sidebar() ?>
+
 			<?php else: ?>			
 	
 			<?php while ( have_posts() ) : the_post(); ?>
