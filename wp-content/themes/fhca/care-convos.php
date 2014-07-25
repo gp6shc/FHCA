@@ -1,22 +1,36 @@
 <?php
 /**
- * The main blog posts list.
- *
+/*
+ * Template Name: Care Convos Page
  * @package FHCA
  */
 get_header()?>
 	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">			
+			<!--
 			<div class="landing-content">
 				<p><?php echo get_post(30)->post_content; ?></p>
 			</div>
+			-->
+
 			<div class="entry-content">
-			
+		
+				<div class="title">
+					<h1><?php the_title();?></h1>
+				</div>
+				<div class="icon-fa">
+				    	<?php 
+				    		the_page_fa_icon( get_the_ID() );
+				    	?>
+			    </div>
+
+		
 			<?php // Define custom query parameters
 			
 			   $custom_query_args = array(
-					'posts_per_page' => 7,
+					'cat' => -4,
+					'posts_per_page' => 5,
 					'orderby' => 'date',
 				);
 				
@@ -34,6 +48,7 @@ get_header()?>
 				        $custom_query->the_post(); ?>
 					
 						<article class="post-results">		
+							<div id="contain">
 							<div class="post" id="post-<?php the_ID(); ?>">
 							    <div class="title">
 							    	<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
@@ -51,7 +66,7 @@ get_header()?>
 							    	<?php the_excerpt(); ?>
 							    </div>
 							</div>
-							
+							</div>
 						</article>
 			
 			<?php	endwhile;
@@ -74,10 +89,9 @@ get_header()?>
 				// Reset main query object
 				$wp_query = NULL;
 				$wp_query = $temp_query; ?>
-			    			
+				    			
 			</div>
-
+			<?php get_sidebar()?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 <?php get_footer()?>

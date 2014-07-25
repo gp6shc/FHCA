@@ -6,8 +6,7 @@
  */
 ?>
 <div class="side-nav">
-	<?php
-		wp_list_categories();
-		wp_get_archives();
+	<?php 
+	   	wp_list_pages('child_of=16&title_li=&exclude=2');
 	?>
 </div>
