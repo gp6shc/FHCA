@@ -8,7 +8,7 @@ get_header(); ?>
 	<div id="home-contain" class="clearfix">
 		<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_group_1.jpg);">
 			<div>
-				<?php $id = 6; $post_object = get_post( $id ); echo $post_object->post_content; ?>
+				<?php echo get_post( 6 )->post_content; ?>
 				<button><a href="<?php echo get_permalink(33); ?>">See Report</a></button>
 			</div>
 		</div>
@@ -76,11 +76,11 @@ get_header(); ?>
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);" >
 			    <a href="<?php echo get_permalink(53); ?>"><span>Memory & Cognition in Seniors</span></a>
 			</div>
-			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);">
-			    <a href="<?php echo get_permalink(26); ?>"><span>Infographics</span></a>
-			</div>
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);">
-			    <a href="<?php echo get_permalink(76); ?>"><span>Advocating for Your Parent</span></a>
+			    <a href="<?php echo get_permalink(33); ?>"><span>60 Years of Caring</span></a>
+			</div>
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);">
+			    <a href="<?php echo get_permalink(388); ?>"><span>"… the best thing we could have done to help Dad"</span></a>
 			</div>
 		</div>
 	</div>	
