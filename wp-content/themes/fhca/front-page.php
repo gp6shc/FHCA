@@ -69,7 +69,7 @@ get_header(); ?>
 				</li>
 -->
 			</ul>
-				<button><a href="<?php echo get_permalink(49); ?>">See More</a></button>
+				<button><a href="<?php echo get_permalink(12); ?>">See More</a></button>
 		</aside>
 		
 		<div class="boxes clearfix">
