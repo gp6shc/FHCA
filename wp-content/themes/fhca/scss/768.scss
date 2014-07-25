@@ -21,10 +21,9 @@ h4 {
 }
 
 .main-nav {
-	padding-left: 10px;
+	padding-left: 7px;
 	
 	a {
-		font-size: 22px;
 	}
 }
 
@@ -35,15 +34,9 @@ h4 {
 
 .feature {
 	width: 100%;
-	margin-right: 0;
-	background-position: left center;
-	 
-	 div {
-		 margin: 20px;
-	 }
 	 
 	 h2 {
-		 font-size: 46px;
+		 font-size: 25px;
 	 }
 }
 
@@ -113,8 +106,12 @@ footer {
 		 width: 214px;
 		 padding: 0;
 	 }
+	 
+	 h5 {
+		 font-size: 20px;
+	 }
 }
 
 #sponsor {
-	margin: 232px 0 0 0;
+	margin: 22px 0 0 0;
 }

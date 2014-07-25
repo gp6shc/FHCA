@@ -40,7 +40,11 @@
 				<div class="site-branding">
 				    <a href="<?php echo home_url(); ?>"> <!-- onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png -->
 				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.png'" alt="60 Years of Caring">
-				    <div id="slogan"><span>Elder Care<br/><span>Florida</span></span></div>
+				    <div id="slogan">
+				    	<span>Elder Care<br/>
+				    		<span>Florida</span>
+				    	</span>
+				    </div>
 				    </a>
 				</div>
 				

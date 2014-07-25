@@ -160,13 +160,13 @@ a {
 //======== HEADER STYLE ========//
 
 .header-contain {
-	padding: 0 5%;
+	padding: 0 4%;
 	margin: 0 auto;
 	max-width: 2000px;
 }
 
 .header-super-contain {
-	padding: 0 5%;
+	padding: 0 4%;
 	margin: 0 auto;
 	max-width: 2000px;
 	background-color: $darkblue;
@@ -348,14 +348,14 @@ nav {
 .main-nav {
 	float: left;
 	margin: 0;
-	padding-left: 25px;
+	padding-left: 20px;
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
 		
 	a {
 	    display: block;
 	    padding: 0;
-	    font-size: 26px;
+	    font-size: 22px;
 	    font-weight: 700;
 	    line-height: 104px;
 	    color: white;
@@ -442,31 +442,68 @@ nav {
 	
 	div {
 		width: 100%;
+		text-align: center;
 	}
 	
 	h2 {
 		color: white;
 		font-size: 36px;
 		line-height: 1.1;
-		padding: 23px;
+		padding: 18px;
 		background-color: rgba(33,55,110,0.8);
 	}
 	
 	p {
-		color: #555555;
-		font-size: 19px;
+		color: rgba(0,0,0,1);
+		font-size: 17px;
 		line-height: 1.2;
-		width: 25%;
+		text-align: left;
+		display: block;
+		position: absolute;
+		width: 30%;
 		background-color: rgba(255,255,255,0.8);
-		margin: 30px 0;
-		padding: 23px;
+		margin: 33px 0;
+		padding: 25px;
+		transform: translateX(0px);
+		animation: paraFadeIn 3s 1 ease-in;
+		
+		a {
+			color: rgba(33,55,110,1);
+			font-weight: 700;
+			animation: 4s linkFadeIn ease-in;
+			
+			i {
+				font-size: 16px;
+			}
+		}
 	}
 	
 	button {
 		position: absolute;
 		bottom: 0;
-		margin: 0 0 10px 30px;
+		opacity: 1;
+		margin: 0 0 15px 30px;
+		display: none;
 	}
+}
+
+@keyframes paraFadeIn {
+	0%, 50% {
+		transform: translateX(-300px);
+		color: rgba(255,255,255,0);
+		};
+	75% {
+		transform: translateX(0px);
+		color: rgba(255,255,255,0);
+		};
+	100% {
+		color: rgba(0,0,0,1);
+	};
+}
+
+@keyframes linkFadeIn {
+	0%, 90% { color: rgba(33,55,110,0); }
+	100% { color: rgba(33,55,110,1) }
 }
 
 aside {
@@ -498,6 +535,7 @@ aside {
 	
 	a {
 		display: block;
+		padding-top: 15px;
 		
 		&:hover {
 			text-decoration: none;
@@ -520,11 +558,11 @@ aside {
 		
 	li {
 		list-style-type: none;
-		padding-top: 15px;
 		margin: 0;
 
 		h6 {
 			font-size: 18px;
+			text-transform: uppercase;
 			color: $blue;
 			margin: 0 0 5px 0;
 			opacity: 1;
@@ -546,6 +584,10 @@ aside {
     button {
 		margin: 17px auto 0 auto;
 		display: block;
+		
+		a {
+			padding-top: 9px;
+		}
 	}
 }
 
@@ -555,25 +597,24 @@ aside {
 }
 
 .box {
-    width: 30.33%;
+    width: 30.3333333%;
     height: 163px;
     margin: 3% 3% 0 0;
     float: left;
     direction: block;
-    background-color: $blue;
 	background-size: cover;
 	background-position: right center;
     
     a {
 		display: table;
-		width: 100%;
+		width: 100.1%;
 		height: 163px;
 		text-align: center;
 	    color: white;
 		background-color: rgba(33,55,110,0.4);
 		
 		&:hover {
-	    	background-color: rgba(233,227,211,0.63);
+	    	background-color: rgba(255,255,255,0.52);
 	    	text-decoration: none;
 	    	color: $blue;
 		}
@@ -891,6 +932,11 @@ footer {
 	position: relative;
 	transform:translateZ(1px);
 	
+	h5 {
+		font-size: 22px;
+		text-transform: uppercase;
+	}
+	
 	div {
 		width: 80%;
 		margin: 0 auto;
@@ -902,7 +948,7 @@ footer {
 	ul {
 		list-style: none;
 		padding: 35px 10px;
-		max-width: 214px;
+		max-width: 220px;
 		
 		li {
 			margin: 0;
@@ -952,12 +998,29 @@ and (max-width: 1024px) {
 }
 
 @media only screen 
+and (max-width: 832px) {
+	
+	#slogan span {
+		font-size: 23px;
+		padding-left: 2px;
+	}
+	
+	.main-nav {
+		padding-left: 10px;
+		
+		a {
+			font-size: 16px
+		}
+	}
+}
+
+@media only screen 
 and (max-width: 768px) {
 	@import '768';
 }
 
 @media only screen 
-and (max-width: 675px) {
+and (max-width: 700px) {
 	@import '675';
 }
 

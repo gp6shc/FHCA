@@ -9,7 +9,7 @@ get_header(); ?>
 		
 		<main id="main" class="site-main clearfix" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if (is_page(255) ): ?>
+			<?php if (is_page(255) || is_page(81) ): ?>
 				<div class="entry-content">
 				    <div class="title">
 				    	<h1><?php the_title();?></h1>

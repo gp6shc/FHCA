@@ -162,7 +162,7 @@ function the_page_fa_icon($pageID) {
 		<?php break;
 		    case 30: ?>
 		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-wheelchair fa-stack-1x"></i>
+		    		<i class="fa fa-comments fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
@@ -222,7 +222,7 @@ function the_page_fa_icon($pageID) {
 		<?php break;
 		    case 55: ?>
 		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-smile-o fa-stack-1x"></i>
+		    		<i class="fa fa-user-md fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
@@ -244,13 +244,7 @@ function the_page_fa_icon($pageID) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
-		    case 255: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-envelope fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 66: ?>
+		    case 30: ?>
 		    	<div class="fa-stack fa-4x">	
 		    		<i class="fa fa-comments fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
@@ -298,7 +292,12 @@ function the_page_fa_icon($pageID) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
-		    
+			case 255: ?>
+		    	<div class="fa-stack fa-4x">	
+		    		<i class="fa fa-envelope fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
 		    default: ?>
 		    	<div class="fa-stack fa-4x">	
 		    		<i class="fa fa-cube fa-stack-1x"></i>
