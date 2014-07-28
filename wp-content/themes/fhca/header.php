@@ -40,10 +40,13 @@
 				<div class="site-branding">
 				    <a href="<?php echo home_url(); ?>"> <!-- onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png -->
 				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.png'" alt="60 Years of Caring">
-				    <div id="slogan">
+				    <div class="slogan desktop">
 				    	<span>Elder Care <em>in</em> Florida<br/>
 				    		<span><em>Resources for Families</em></span>
 				    	</span>
+				    </div>
+				    <div class="slogan mobile">
+				    	<span>Elder Care<br/><em>in</em> Florida</span>
 				    </div>
 				    </a>
 				</div>
@@ -58,7 +61,7 @@
 					<ul class="main-nav" id="care-options">
 				        <li><a href="<?php echo get_permalink(14); ?>"><?php echo get_the_title(14); ?></a>
 				        	<ul class="sub-nav">
-				    	    	<?php wp_list_pages('title_li=&child_of=14'); ?>
+				    	    	<?php wp_list_pages('title_li=&child_of=14&depth=1'); ?>
 				        	</ul>
 				        </li>
 					</ul>
@@ -66,7 +69,7 @@
 					<ul class="main-nav" id="aging">
 				        <li><a href="<?php echo get_permalink(12); ?>"><?php echo get_the_title(12); ?></a>
 				        	<ul class="sub-nav">
-				    	    	<?php wp_list_pages('title_li=&child_of=12'); ?>
+				    	    	<?php wp_list_pages('title_li=&child_of=12&depth=1'); ?>
 				        	</ul>
 				        </li>
 				        	
@@ -75,7 +78,7 @@
 				    <ul class="main-nav" id="elder-care">
 				    	<li><a href="<?php echo get_permalink(10); ?>"><?php echo get_the_title(10); ?></a>
 				    		<ul class="sub-nav">
-				        		<?php wp_list_pages('title_li=&child_of=10'); ?>
+				        		<?php wp_list_pages('title_li=&child_of=10&depth=1'); ?>
 				    		</ul>
 				    	</li>
 				    </ul>
@@ -83,7 +86,7 @@
 				    <ul class="main-nav" id="stories">
 				        <li><a href="<?php echo get_permalink(16); ?>"><?php echo get_the_title(16); ?></a>
 				        	<ul class="sub-nav">
-				        		<?php wp_list_pages('title_li=&child_of=16'); ?>
+				        		<?php wp_list_pages('title_li=&child_of=16&depth=1'); ?>
 				    		</ul>
 				        </li>
 				    </ul>

@@ -40,7 +40,7 @@ get_header(); ?>
 		   					<h3><?php the_title(); ?></h3>
 		   				</div>
 		   				<div class="icon-fa">
-		   					<?php the_page_fa_icon( get_the_ID() ); ?>
+		   					<?php the_page_fa_icon( get_the_ID(),'4x' ); ?>
 		   				</div>
 		   			</a>
        			</div>

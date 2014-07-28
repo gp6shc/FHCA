@@ -10,19 +10,19 @@
 		<div>
 			<ul>
 				<h5><a href="<?php echo get_permalink(10); ?>"><?php echo get_the_title(10); ?></h5>
-				<?php wp_list_pages('title_li=&child_of=10'); ?>
+				<?php wp_list_pages('title_li=&child_of=10&depth=1'); ?>
 			</ul>
 			<ul>
 				<h5><a href="<?php echo get_permalink(12); ?>"><?php echo get_the_title(12); ?></h5>
-				<?php wp_list_pages('title_li=&child_of=12'); ?>
+				<?php wp_list_pages('title_li=&child_of=12&depth=1'); ?>
 			</ul>
 			<ul>
 				<h5><a href="<?php echo get_permalink(14); ?>"><?php echo get_the_title(14); ?></h5>
-				<?php wp_list_pages('title_li=&child_of=14'); ?>
+				<?php wp_list_pages('title_li=&child_of=14&depth=1'); ?>
 			</ul>
 			<ul>
 				<h5><a href="<?php echo get_permalink(16); ?>"><?php echo get_the_title(16); ?></h5>
-				<?php wp_list_pages('title_li=&child_of=16'); ?>
+				<?php wp_list_pages('title_li=&child_of=16&depth=1'); ?>
 				<div id="sponsor">
 					<a href="http://www.fhca.org/" target="_blank"><h5>Sponsored by:</h5>
 					<img src="<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/fhca_logo.png'" alt="60 Years of Caring"></a>

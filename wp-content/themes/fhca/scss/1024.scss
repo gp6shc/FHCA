@@ -23,6 +23,18 @@
 	padding-left: 4px;
 }
 
+.desktop {
+	display: none;
+}
+
+.mobile {
+	display: inline-block;
+	
+	span {
+		line-height: 0.9;
+	}
+}
+
 .main-nav {
 	padding-left: 15px;
 	

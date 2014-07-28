@@ -140,130 +140,130 @@ function the_post_excerpt_by_id($ID, $limit) {
 }
 
 // Font Awesome icon associations for the pages
-function the_page_fa_icon($pageID) {
+function the_page_fa_icon($pageID,$XX) {
 	switch ($pageID) {
 		    case 20: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-child fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 26: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-sitemap fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 28: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-home fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 30: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-comments fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 33: ?>
-		    	<div class="fa-stack fa-4x" id="one-line">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>" id="one-line">	
 		    		<i class="fa fa-pencil-square-o fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 36: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-list-ol fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 38: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-key fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 42: ?>
-		    	<span class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-arrow-circle-down fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</span>
+		    	</div>
 		<?php break;
 		    case 45: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-car fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 47: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-volume-up fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 49: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-road fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 51: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-medkit fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 53: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-book fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 55: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-user-md fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 57: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-eye fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 68: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-star fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 76: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-group fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    case 81: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-pencil fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 			case 255: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-envelope fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 			case 388: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-paragraph fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
 		    default: ?>
-		    	<div class="fa-stack fa-4x">	
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-cube fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>	
