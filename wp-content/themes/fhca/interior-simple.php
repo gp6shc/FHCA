@@ -9,8 +9,33 @@ get_header(); ?>
 		
 		<main id="main" class="site-main clearfix" role="main">
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<?php if (is_page(255) || is_page(81) ): ?>
+			<?php if( is_page(81) ): ?>
 				<div class="entry-content">
+				    <div class="title">
+				    	<h1><?php the_title();?></h1>
+				    </div>
+				    
+				    <div class="icon-fa">
+				    	<?php 
+				    		the_page_fa_icon( get_the_ID() );
+				    	?>
+				    </div>
+				    
+					<p><?php 
+						$post_id = 81;
+						global $post;
+						$post = &get_post($post_id);
+						setup_postdata( $post );
+						the_content();
+						wp_reset_postdata( $post );
+						
+					?></p>
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+		    <?php get_sidebar() ?>
+			<?php elseif( is_page(255) ): ?>
+			
+			<div class="entry-content">
 				    <div class="title">
 				    	<h1><?php the_title();?></h1>
 				    </div>
@@ -32,9 +57,8 @@ get_header(); ?>
 					?></p>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
-		    <?php get_sidebar() ?>
-
-			<?php else: ?>			
+		
+		<?php else: ?>				
 	
 			<?php while ( have_posts() ) : the_post(); ?>
 				
