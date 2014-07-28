@@ -18,40 +18,28 @@ get_header(); ?>
 			<ul>
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(20); ?>">
-					<div class="fa-stack fa-2x">	
-						<i class="fa fa-child fa-stack-1x"></i>
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-					</div>
+					<?php the_page_fa_icon(20); ?>
 					<h6><?php echo get_the_title(20); ?></h6>
 					<p><?php echo the_post_excerpt_by_id(20,20);?></p>
 					</a>
 				</li>
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(42); ?>">
-					<div class="fa-stack fa-2x">	
-						<i class="fa fa-arrow-circle-down fa-stack-1x"></i>
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-					</div>
+					<?php the_page_fa_icon(42); ?>
 					<h6><?php echo get_the_title(42); ?></h6>
 					<p><?php echo the_post_excerpt_by_id(42,20);?></p>
 					</a>
 				</li>
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(45); ?>">
-					<div class="fa-stack fa-2x">	
-						<i class="fa fa-car fa-stack-1x"></i>
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-					</div>
+					<?php the_page_fa_icon(45); ?>
 					<h6><?php echo get_the_title(45); ?></h6>
 					<p><?php echo the_post_excerpt_by_id(45,20);?></p>
 					</a>
 				</li>
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(47); ?>">
-					<div class="fa-stack fa-2x">	
-						<i class="fa fa-volume-up fa-stack-1x"></i>
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-					</div>
+					<?php the_page_fa_icon(47); ?>
 					<h6><?php echo get_the_title(47); ?></h6>
 					<p><?php echo the_post_excerpt_by_id(47,20);?></p>
 					</a>
@@ -59,10 +47,7 @@ get_header(); ?>
 <!--
 				<li>
 					<a class="clearfix" href="<?php echo get_permalink(49); ?>">
-					<div class="fa-stack fa-2x">	
-						<i class="fa fa-road fa-stack-1x"></i>
-						<i class="fa fa-circle-thin fa-stack-2x"></i>
-					</div>
+					<?php the_page_fa_icon(49); ?>
 					<h6><?php echo get_the_title(49); ?></h6>
 					<p><?php echo the_post_excerpt_by_id(49,20);?></p>
 					</a>

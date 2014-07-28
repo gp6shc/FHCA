@@ -232,57 +232,15 @@ function the_page_fa_icon($pageID) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
-		    case 59: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-code-fork fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 62: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-signal fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 30: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-comments fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
 		    case 68: ?>
 		    	<div class="fa-stack fa-4x">	
 		    		<i class="fa fa-star fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
-		    case 70: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-building fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 72: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-user-md fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 74: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-legal fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
 		    case 76: ?>
 		    	<div class="fa-stack fa-4x">	
 		    		<i class="fa fa-group fa-stack-1x"></i>
-		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>
-		<?php break;
-		    case 79: ?>
-		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-puzzle-piece fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
@@ -300,7 +258,7 @@ function the_page_fa_icon($pageID) {
 		<?php break;
 			case 388: ?>
 		    	<div class="fa-stack fa-4x">	
-		    		<i class="fa fa-lines fa-stack-1x"></i>
+		    		<i class="fa fa-paragraph fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
