@@ -7,6 +7,7 @@ $lightblue: #91B1DD; // RGB = 145,177,221
 $blue: #21376E; // RGB = 33,55,110
 $darkblue: #142858; // RGB = 20,40,88
 $darktext: #ccc; // RGB = 204,204,204
+$lightgrey: #faf7f7; // RGB =
 
 $titlefont: 'PT Sans', sans-serif;
 $bodyfont: 'Crimson Text', serif;
@@ -74,9 +75,15 @@ h6 {
 p {
 	font-family: $bodyfont;
 	font-size: 24px;
-	color: #6d6e71;
+	color: #48494b;
 	margin: 0;
 	margin-bottom: 23px;
+}
+
+q {
+	display: block;
+	padding: 30px;
+	background-color: $lightgrey;	
 }
 
 span {
@@ -94,36 +101,27 @@ ol {
 
 li {
 	font-size: 24px;
-	color: #6d6e71;
+	color: #434750;
 	margin: 10px 0;
 }
 
-button {
+.button {
 	font-family: $titlefont;
-	padding: 0;
+	padding: 9px 20px;
 	font-size: 24px;
 	margin: 20px 0;
 	border: 1px $blue solid;
 	border-radius: 10px;
 	background-color: rgba(255,255,255,0.5);
+	text-decoration: none;
+	display: inline-block;
+	color: $blue;
 	
 	&:hover {
 		background-color: $blue;
+		text-decoration: none;
 		color: white;
-		
-		a {
-			text-decoration: none;
-		    color: white;
-		}
-	}
-	
-	a {
-		display: block;
-		padding: 9px 20px;
-		color: $blue;
-	}
-	
-	
+	}	
 }
 
 img {
@@ -369,7 +367,7 @@ nav {
 	    font-weight: 700;
 	    line-height: 104px;
 	    color: white;
-	    		
+	    
 	    &:visited {
 	    	color: white;
 	    }
@@ -392,16 +390,24 @@ nav {
 
 .sub-nav {
 	visibility: hidden;
-	height: 286px;
 	margin-top: -25px;
 	padding: 0 30px 0 0;
+	height: 245px;
 	opacity: 0;
-	
 	transition: opacity 0.2s ease;
+	
+	&:hover li {
+		opacity: 0.5;
+	}
 	
 	li {
 		padding: 3px 0;
 		color: white;
+		transition: opacity 0.2s ease;
+		
+		&:hover {
+			opacity: 1;
+		}
 	}
 	
 	a {
@@ -412,7 +418,7 @@ nav {
 		cursor: pointer;
 	    
 	    &:hover {
-		    text-decoration: underline;
+		    text-decoration: none;
 	    }
 	    
 	    &:visited {
@@ -491,14 +497,6 @@ nav {
 			}
 		}
 	}
-	
-	button {
-		position: absolute;
-		bottom: 0;
-		opacity: 1;
-		margin: 0 0 15px 30px;
-		display: none;
-	}
 }
 
 @keyframes paraFadeIn {
@@ -524,9 +522,9 @@ aside {
 	width: 32%;
 	margin-top: 20px;
 	float: right;
+	text-align: center;
 	
 	h2 {
-		text-align: center;
 		font-size: 36px;
 		margin-bottom: 15px;
 	}
@@ -541,10 +539,6 @@ aside {
 				opacity: 0.5;
 			}
 		}
-	}
-	
-	.fa {
-		color: $blue;
 	}
 	
 	a {
@@ -568,6 +562,7 @@ aside {
 	div>i {
 		opacity: 1;
 		transition: opacity 0.2s ease;
+		color: $lightblue;
 	}
 		
 	li {
@@ -577,6 +572,7 @@ aside {
 		h6 {
 			font-size: 18px;
 			text-transform: uppercase;
+			text-align: left;
 			color: $blue;
 			margin: 0 0 5px 0;
 			opacity: 1;
@@ -588,6 +584,7 @@ aside {
 			opacity: 1;
 			transition: opacity 0.2s ease;
 			margin: 0;
+			text-align: left;
 		}
 		
 		&:hover {
@@ -595,13 +592,9 @@ aside {
 		}
 	}
     
-    button {
+    .button {
 		margin: 17px auto 0 auto;
-		display: block;
-		
-		a {
-			padding-top: 9px;
-		}
+		padding-top: 9px;
 	}
 }
 
@@ -649,8 +642,7 @@ aside {
 
 .infographic {
 	margin-top: 23px;
-	text-align: center;
-	background-color: #00b26d; 
+	text-align: center; 
 	
 	p {
 		margin: 0;
@@ -659,9 +651,7 @@ aside {
 	img {
 		margin: 0;
 	}
-	
-	button {
-	}
+
 }
 
 .button-row {
@@ -731,7 +721,7 @@ aside {
 
 .icon-fa {
 	display: block;
-	color: $blue;
+	color: $lightblue;
 	text-align: center;
 }
 
@@ -768,10 +758,6 @@ aside {
 	
 	.current_page_item {
     	background-color: $lightblue;
-    
-		a {
-			font-weight: 700;
-		}
 	}
 }
 
@@ -817,7 +803,7 @@ aside {
 	}
 	
 	.title {
-		height: 72px;
+		height: 108px;
 		display: table;
 		margin: 0 0 23px 0;
 		
@@ -957,7 +943,7 @@ article {
 #more-info {
 	margin: 15px 0 0 0;
 	padding: 40px 2.5%;
-	background-color: #faf7f7;
+	background-color: $lightgrey;
 	text-align: center;
 	
 	h3 {
@@ -1033,6 +1019,7 @@ footer {
 		display: flex;
 		justify-content: space-around;
 		-webkit-flex-flow: row wrap;
+		
 	}
 	
 	ul {
@@ -1046,6 +1033,7 @@ footer {
 			font-family: $titlefont;
 			font-size: 20px;
 			opacity: 1;
+
 		}
 		
 		a {

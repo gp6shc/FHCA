@@ -262,6 +262,43 @@ function the_page_fa_icon($pageID,$XX) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
+			case 479: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-stethoscope fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+			case 488: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-warning fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+			case 494: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-comments-o fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+			case 499: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-map-marker fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+			case 503: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-home fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+			case 507: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-dollar fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
+		    
 		    default: ?>
 		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-cube fa-stack-1x"></i>
