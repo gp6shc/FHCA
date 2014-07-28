@@ -93,7 +93,7 @@
 				    
 				</nav>
 				<ul class="main-nav" style="float: right">
-					<li><a href="<?php echo get_permalink(0); ?>">Home</a>
+					<li><a href="<?php bloginfo('url'); ?>">Home</a>
 				</ul>
 			</div>
 		</header>

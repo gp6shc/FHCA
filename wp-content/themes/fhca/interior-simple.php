@@ -17,7 +17,7 @@ get_header(); ?>
 				    
 				    <div class="icon-fa">
 				    	<?php 
-				    		the_page_fa_icon( get_the_ID() );
+				    		the_page_fa_icon( get_the_ID(), '4x' );
 				    	?>
 				    </div>
 				    
@@ -42,7 +42,7 @@ get_header(); ?>
 				    
 				    <div class="icon-fa">
 				    	<?php 
-				    		the_page_fa_icon( get_the_ID() );
+				    		the_page_fa_icon( get_the_ID(), '4x' );
 				    	?>
 				    </div>
 				    

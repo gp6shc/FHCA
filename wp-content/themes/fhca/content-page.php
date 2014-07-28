@@ -24,7 +24,25 @@
 				<?php wp_list_pages('child_of=26&title_li=&exclude=2&depth=1'); ?>
 			</div>
 			
-			<div class="infographic">
+			<?php				
+				switch(get_the_ID()) {
+					case(444):
+						$BGColor = "#33aa6a";
+						break;
+					case(456):
+						$BGColor = "#2a4888";
+						break;
+					case(450):
+						$BGColor = "#5095a4";
+						break;
+					case(453):
+						$BGColor = "#e07458";
+						break;
+					default:
+						$BGColor = "white";
+			}?>
+			
+			<div class="infographic" style="background-color: <?php echo $BGColor ?>;">
 				<?php the_content(); ?>
 			</div>
 			

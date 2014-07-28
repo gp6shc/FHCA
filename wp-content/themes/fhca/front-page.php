@@ -44,17 +44,17 @@ get_header(); ?>
 					</a>
 				</li>
 			</ul>
-				<button><a href="<?php echo get_permalink(12); ?>">See More</a></button>
+				<a class="button" href="<?php echo get_permalink(12); ?>">See More</a>
 		</aside>
 		
 		<div class="boxes clearfix">
-			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_1.jpg);" >
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_1.jpg);" >
 			    <a href="<?php echo get_permalink(53); ?>"><span>Memory & Cognition in Seniors</span></a>
 			</div>
-			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_3.jpg);">
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_2.jpg);">
 			    <a href="<?php echo get_permalink(33); ?>"><span>60 Years of Caring</span></a>
 			</div>
-			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_2.jpg);">
+			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_3.jpg);">
 			    <a href="<?php echo get_permalink(388); ?>"><span>"… the best thing we could have done to help Dad"</span></a>
 			</div>
 		</div>
