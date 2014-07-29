@@ -55,8 +55,10 @@ get_header(); ?>
 						wp_reset_postdata( $post );
 						
 					?></p>
+					
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
+<?php get_sidebar(); ?>
 		
 		<?php else: ?>				
 	

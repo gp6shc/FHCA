@@ -38,7 +38,7 @@
 
 			<div class="header-contain clearfix">
 				<div class="site-branding">
-				    <a href="<?php echo home_url(); ?>"> <!-- onerror="this.src="<?php bloginfo('stylesheet_directory')?>/img/logo.png -->
+				    <a href="<?php echo home_url(); ?>">
 				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.png'" alt="60 Years of Caring">
 				    <div class="slogan desktop">
 				    	<span>Elder Care <em>in</em> Florida<br/>
@@ -92,7 +92,7 @@
 				    </ul>
 				    
 				</nav>
-				<ul class="main-nav" style="float: right">
+				<ul class="main-nav home-nav" style="float: right">
 					<li><a href="<?php bloginfo('url'); ?>">Home</a>
 				</ul>
 			</div>

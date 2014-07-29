@@ -15,7 +15,7 @@ get_header()?>
 			-->
 
 			<div class="entry-content">
-		
+			<div class="story-title">
 				<div class="title">
 					<h1><?php the_title();?></h1>
 				</div>
@@ -24,7 +24,7 @@ get_header()?>
 				    		the_page_fa_icon( get_the_ID(), '4x' );
 				    	?>
 			    </div>
-
+			</div>
 		
 			<?php // Define custom query parameters
 			
@@ -53,7 +53,7 @@ get_header()?>
 							    <div class="title">
 							    	<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>"><?php the_title(); ?></a></h3>
 							    	<div class="postmeta">
-							    		<span><i>Posted on <?php the_time('l, F j, Y'); ?></span> | <span><?php the_category(', '); ?></i></span>
+							    		<span><i>Posted on <?php the_time('l, F j, Y'); ?></i></span>
 							    	</div>
 							    </div>
 							

@@ -247,7 +247,6 @@ a {
 		border: 2px solid $blue;
 		box-sizing: border-box;
 		transition: border 0.7s ease;
-		vertical-align: middle;
 		
 		&::-webkit-input-placeholder { 
 			color: $darktext;			
@@ -331,7 +330,7 @@ a {
 }
 
 .height {
-	height: 350px !important;
+	height: 310px !important;
 }
 
 nav {
@@ -339,6 +338,7 @@ nav {
 	width: auto;
 	float: right;
 	transition: height 0.3s cubic-bezier(0.360, 0.060, 0.140, 1.450);
+	//transform: translateZ(0); breaks event listeners on menu-button
 	
 	&:hover {
 		height: 330px;
@@ -501,7 +501,7 @@ nav {
 
 @keyframes paraFadeIn {
 	0%, 50% {
-		transform: translateX(-300px);
+		transform: translateX(-400px);
 		color: rgba(255,255,255,0);
 		};
 	75% {
@@ -523,6 +523,7 @@ aside {
 	margin-top: 20px;
 	float: right;
 	text-align: center;
+	transform: translate3d(0,0,0);
 	
 	h2 {
 		font-size: 36px;
@@ -663,7 +664,7 @@ aside {
 		display: inline-block;
 		margin: 0;
 		padding: 0;
-		margin-left: -1px;
+		margin: 0 0 -1px -1px;
 		box-sizing: border-box;
 		border: 1px solid $blue;
 		color: $blue;
@@ -704,6 +705,9 @@ aside {
 	}
 }
 
+.short-title {
+	display: none;
+}
 
 //======== GENERIC PAGE STYLE ========//
 
@@ -856,7 +860,7 @@ aside {
 
 .page-results-nav {
 	width: 60%;
-	margin: 35px auto;
+	margin: 35px 20%;
 	display: block;
 	background-color: white;
 	
@@ -926,6 +930,10 @@ article {
 		width: 100%;
 		height: auto;
 	}
+	
+	span i {
+		color: #949494;
+	}
 }
 
 #contain {
@@ -965,6 +973,10 @@ article {
 	}
 }
 
+.story-title {
+	width: 60%;
+	margin: 0 20%;
+}
 //======== FONT AWESOME ========//
 
 .fa {
@@ -1047,7 +1059,7 @@ footer {
 }
 
 #sponsor {
-	margin: 127px 0 0 0;
+	margin: 207px 0 0 0;
 	
 	h5 {
 		font-size: 16px;
@@ -1071,14 +1083,40 @@ footer {
 //======== MEDIA QUERIES ========//
 
 @media only screen 
+and (max-width: 1366px) {
+	.short-title {
+		display: block;
+	}
+	
+	.long-title {
+		display: none;
+	}
+}
+
+@media only screen 
+and (max-width: 1224px) {
+	.main-nav {
+		padding-left: 15px;
+		
+		a {
+			font-size: 18px;
+		}
+	}
+	
+	.main-nav.home-nav {
+		display: none;
+	}
+}
+
+@media only screen 
 and (max-width: 1024px) {
 	@import '1024';
 }
 
 @media only screen 
-and (max-width: 832px) {
+and (max-width: 850px) {
 	
-	#slogan span {
+	.slogan span {
 		font-size: 23px;
 		padding-left: 2px;
 	}
@@ -1087,7 +1125,7 @@ and (max-width: 832px) {
 		padding-left: 10px;
 		
 		a {
-			font-size: 16px
+			font-size: 17px
 		}
 	}
 }
@@ -1098,7 +1136,7 @@ and (max-width: 768px) {
 }
 
 @media only screen 
-and (max-width: 700px) {
+and (max-width: 720px) {
 	@import '675';
 }
 

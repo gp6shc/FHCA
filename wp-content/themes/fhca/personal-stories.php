@@ -14,7 +14,7 @@ get_header()?>
 			</div>
 			-->
 			<div class="entry-content">
-			
+			<div class="story-title">
 				<div class="title">
 					<h1><?php the_title();?></h1>
 				</div>
@@ -23,7 +23,7 @@ get_header()?>
 				    		the_page_fa_icon( get_the_ID(), '4x' );
 				    	?>
 			    </div>
-
+			</div>
 			
 			<?php // Define custom query parameters
 			
