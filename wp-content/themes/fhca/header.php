@@ -10,7 +10,10 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon.png">
 
 <title>Elder Care Florida<?php wp_title('|', true, 'left' ); ?></title>
 
