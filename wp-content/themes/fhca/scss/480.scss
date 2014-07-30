@@ -61,10 +61,31 @@ li {
 	}
 	
 	p {
-		bottom: 0;
-		width: 98%;
+		bottom: -22px;
+		width: 96%;
 		margin: 0;
-		padding: 1%;
+		padding: 1% 3%;
+		margin-top: 10px;
+	}
+	
+	a {
+		font-family: $titlefont;
+		padding: 8px 10px ;
+		margin: 4px auto 0 auto;
+		width: 200px;
+		display: block;
+		text-align: center;
+		line-height: 1;
+		font-size: 18px;
+		background-color: white;
+		border: 1px rgba(33,55,110,1) solid;
+		border-radius: 10px;
+		text-decoration: none;
+		color: $blue;
+		
+		i {
+			display: none;	
+		}
 	}
 }
 

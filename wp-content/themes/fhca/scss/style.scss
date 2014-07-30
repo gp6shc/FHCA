@@ -485,17 +485,19 @@ nav {
 		transform: translateX(0px);
 		animation: paraFadeIn 3s 1 ease-in;
 		
-		a {
-			color: rgba(33,55,110,1);
-			font-weight: 700;
-			display: inline-block;
-			padding-top: 10px;
-			animation: 5s linkFadeIn ease-in;
-			
-			i {
-				font-size: 12px;
-			}
-		}
+		
+	}
+	
+	a {
+	    color: rgba(33,55,110,1);
+	    font-weight: 700;
+	    display: inline-block;
+		padding-top: 10px;
+	    animation: 5s linkFadeIn ease-in;
+	    
+	    i {
+	    	font-size: 12px;
+	    }
 	}
 }
 
@@ -514,8 +516,14 @@ nav {
 }
 
 @keyframes linkFadeIn {
-	0%, 90% { color: rgba(33,55,110,0); }
-	100% { color: rgba(33,55,110,1) }
+	0%, 90% { 
+		color: rgba(33,55,110,0);
+		border: 1px rgba(33,55,110,0) solid; 
+		}
+	100% {
+		color: rgba(33,55,110,1);
+		border: 1px rgba(33,55,110,1) solid;
+		}
 }
 
 aside {
