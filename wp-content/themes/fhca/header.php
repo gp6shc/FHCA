@@ -9,6 +9,14 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="initial-scale=1">
+
+<meta name="keywords" content="elder care in florida, elder care florida, choosing long term care, long term care in florida, aging issues florida, elder care depression, care options, care conventions, resources for families in florida, resources for elder families, elder care resources florida, elder care conventions">
+<meta name="description" content="Choosing the right long term care facility for loved ones can be challenging. Elder Care in Florida provides resources to help families choose the best option.">
+<meta property="og:title" content="<?php the_title(); ?>">
+<meta property="og:url" content="<?php the_permalink(); ?>">
+<meta property="og:description" content="<?php the_content(); ?>">
+<meta property="og:image" content="http://eldercareflorida.com/wp-content/themes/fhca/img/fhca_elderly_group_1.jpg">
+
 <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700|Crimson+Text:400,700' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -17,8 +25,9 @@
 
 <title>Elder Care Florida<?php wp_title('|', true, 'left' ); ?></title>
 
-<script type="application/javascript" async src="<?php bloginfo('stylesheet_directory')?>/js/fastclick.min.js"></script>
 <?php wp_head(); ?>
+
+<script type="application/javascript" async src="<?php bloginfo('stylesheet_directory')?>/js/fastclick.min.js"></script>
 
 <!--[if lte IE 9]>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory')?>/ie.css" />
