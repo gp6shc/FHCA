@@ -338,7 +338,7 @@ nav {
 	width: auto;
 	float: right;
 	transition: height 0.3s cubic-bezier(0.360, 0.060, 0.140, 1.450);
-	//transform: translateZ(0); breaks event listeners on menu-button
+	
 	
 	&:hover {
 		height: 330px;
@@ -1119,6 +1119,13 @@ and (max-width: 1224px) {
 @media only screen 
 and (max-width: 1024px) {
 	@import '1024';
+}
+
+@media only screen 
+and (min-width: 1025px) {
+	nav {
+		transform: translateZ(0); //breaks event listeners on #menu-button but fixes Safari's text opacity oddities 
+	}
 }
 
 @media only screen 
