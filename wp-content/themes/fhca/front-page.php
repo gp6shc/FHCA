@@ -49,13 +49,13 @@ get_header(); ?>
 		
 		<div class="boxes clearfix">
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_1.jpg);" >
-			    <a href="<?php echo get_permalink(53); ?>"><span>Memory & Cognition in Seniors</span></a>
+			    <a href="<?php echo get_permalink(53); ?>"><span><?php the_post_excerpt_by_id(53,12)?></span></a>
 			</div>
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_2.jpg);">
-			    <a href="<?php echo get_permalink(33); ?>"><span>60 Years of Caring</span></a>
+			    <a href="<?php echo get_permalink(33); ?>"><span><?php the_post_excerpt_by_id(33,12)?></span></a>
 			</div>
 			<div class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_3.jpg);">
-			    <a href="<?php echo get_permalink(388); ?>"><span>"… the best thing we could have done to help Dad"</span></a>
+			    <a href="<?php echo get_permalink(388); ?>"><span><?php the_post_excerpt_by_id(388,12)?></span></a>
 			</div>
 		</div>
 	</div>	

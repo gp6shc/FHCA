@@ -37,7 +37,7 @@
 				    <ul>
 				    	<!-- missing </li> tags to counter inline-block space -->
 				    	<!-- <li><a href="<?php echo get_permalink(253); ?>">Media Center</a> -->
-				    	<li><a href="<?php echo get_permalink(255); ?>">Contact</a>
+				    	<li><a href="<?php echo get_permalink(255); ?>"><?php echo get_the_title(255); ?></a>
 				    	<li class="search">
 				    	    <?php get_search_form(); ?>
 				    </ul>
