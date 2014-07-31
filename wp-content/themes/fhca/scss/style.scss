@@ -294,6 +294,12 @@ a {
 		margin: 0;
 		height: 80px;
 		width: 80px;
+		transition: all 0.7s ease 5s;
+		
+		&:hover {
+			transform: rotate(360deg);
+			
+		}
 	}
 	
 	a {
