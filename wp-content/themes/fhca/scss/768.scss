@@ -35,6 +35,8 @@ h4 {
 
 .feature {
 	width: 100%;
+	float: none;
+	margin: 0;
 	 
 	 h2 {
 		 font-size: 25px;
@@ -47,10 +49,12 @@ aside {
 
 .boxes {
 	width: 50%;
+	margin-top: 18px;
 }
 	
 .box {
-	width: 97%;
+	width: 92%;
+	height: 178px;
 }
 
 .side-nav {
