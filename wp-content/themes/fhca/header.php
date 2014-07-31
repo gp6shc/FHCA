@@ -19,6 +19,11 @@
 
 <script type="application/javascript" async src="<?php bloginfo('stylesheet_directory')?>/js/fastclick.min.js"></script>
 <?php wp_head(); ?>
+
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory')?>/ie.css" />
+<![endif]-->
+
 </head>
 
 <body <?php body_class(); ?>>

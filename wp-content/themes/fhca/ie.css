@@ -1,0 +1,13 @@
+footer div {
+	display: block;
+	margin: 0 auto 0 20%;
+}
+
+footer div ul {
+	float: left;
+	display: block
+}
+
+.grid-item {
+	float: left;
+}

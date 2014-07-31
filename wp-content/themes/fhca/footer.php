@@ -6,7 +6,7 @@
 
 	</div><!-- #content -->
 
-	<footer role="contentinfo">
+	<footer role="contentinfo" class="clearfix">
 		<div>
 			<ul>
 				<h5><a href="<?php echo get_permalink(10); ?>"><?php echo get_the_title(10); ?></h5>
