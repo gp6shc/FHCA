@@ -9,7 +9,7 @@
 		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 
 		<div class="postmeta">
-			<span>Posted on <?php the_time('l, F j, Y'); ?></span> | <span><?php the_category(', '); ?></span>
+			<span><i>Posted on <?php the_time('l, F j, Y'); ?></i></span>
 		</div>
 	</header><!-- .entry-header -->
 
