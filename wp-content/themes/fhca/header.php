@@ -37,8 +37,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<div id="fixed-nav"></div>
-	
 	<div id="header-wrapper">	
 		<header role="banner" id="nav-bar">
 			<div class="header-super-contain">	

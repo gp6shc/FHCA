@@ -126,17 +126,20 @@ function my_add_excerpts_to_pages() {
 function the_post_excerpt_by_id($ID, $limit) {
 	$post_data = get_post($ID);
     $excerpt = strip_tags($post_data->post_excerpt);
-    $excerpt_length = $limit; //number of words to limit the execerpt to
-    
-    $words = explode(' ', $excerpt, $excerpt_length + 1);
-
-    if(count($words) > $excerpt_length) :
-        array_pop($words);
-        array_push($words, '…');
-        $excerpt = implode(' ', $words);
-    endif;
-
-    echo $excerpt;
+	$length = strlen($excerpt);
+	
+	if ($length === 0) {
+		$excerpt = strip_tags($post_data->post_content);
+		$length = strlen($excerpt);
+	}
+	
+	if (!$limit || $length <= $limit) {
+		echo $excerpt;
+	}else{
+		$excerpt = substr($excerpt, 0, $limit);		
+		echo $excerpt . '…';
+	
+	}
 }
 
 // Font Awesome icon associations for the pages

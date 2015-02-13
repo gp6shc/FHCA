@@ -48,14 +48,17 @@ nav {
 	a {
 		line-height: 1;
 	}
-	
-	&:before {
-		content: "";
-		display: block;
-		border: 0;
-		height: 2px;
-		margin: 10px;
-		background-image: linear-gradient( to right, rgba(255,255,255,0) 40%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
+
+	+ .main-nav {
+		
+		&:before {
+			content: "";
+			display: block;
+			border: 0;
+			height: 2px;
+			margin: 10px;
+			background-image: linear-gradient( to right, rgba(255,255,255,0) 50%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
+		}
 	}
 }
 
