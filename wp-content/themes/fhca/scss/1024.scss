@@ -52,14 +52,20 @@ nav {
 
 #home-contain {
 	width: 92%;
-	margin: 15px auto;
+	margin: 50px auto;
 }
 
 .feature {
 	height: 400px;
-	 
-	h2 {
-		font-size: 28px;
+	
+	div {
+		width: 75%;
+	}
+	
+	h1 {
+		font-size: 40px;
+		padding-top: 0.8em;
+		
 	}
 }
 

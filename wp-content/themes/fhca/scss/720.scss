@@ -66,25 +66,34 @@ nav {
 	font-size: 30px;
 }
 
+.home .site-content {
+	background: none;
+}
 
 .feature {
 	height: 350px;
 	
-	h2 {
-		font-size: 24px;	
+	h1 {
+		font-size: 32px;	
 	}	
 }
 
 aside {
-	width: 60%;
+	width: 94%;
+	margin: 0 3%;
 }
 
 .boxes {
-	width: 40%;
+	width: 100%;
 }
 	
 .box {
-    width: 97%;
+    width: 100%;
+}
+
+.blog-preview {
+	width: 94%;
+	margin: 50px 3%;
 }
 
 .side-nav {

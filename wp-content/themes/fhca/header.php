@@ -56,12 +56,12 @@
 				    <a href="<?php echo home_url(); ?>">
 				    <img src="<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.svg" onerror="this.src='<?php bloginfo('stylesheet_directory'); ?>/img/ecf_logo.png'" alt="60 Years of Caring">
 				    <div class="slogan desktop">
-				    	<span>Elder Care <em>in</em> Florida<br/>
+				    	<span>Elder Care in Florida<br/>
 				    		<span><em>Resources for Families</em></span>
 				    	</span>
 				    </div>
 				    <div class="slogan mobile">
-				    	<span>Elder Care<br/><em>in</em> Florida</span>
+				    	<span>Elder Care<br/>in Florida</span>
 				    </div>
 				    </a>
 				</div>

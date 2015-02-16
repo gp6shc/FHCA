@@ -48,7 +48,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	text-transform: uppercase;
-	font-size: 72px;
+	font-size: 50px;
 	color: $darkblue;
 }
 
@@ -169,6 +169,10 @@ a {
   clear: both;
 }
 
+.home .site-content {
+	background-image: linear-gradient(to right, white 57.5%, #FAF9F7 57.5%);
+}
+
 //======== HEADER STYLE ========//
 
 .header-contain {
@@ -231,6 +235,7 @@ a {
 	}
 	
 	a {
+		font-family: $titlefont;
 		color: $darktext;
 		
 		&:visited {
@@ -255,6 +260,7 @@ a {
 		height: 30px;
 		width: 120px;
 		color: white;
+		font-family: $titlefont;
 		font-size: 16px;
 		padding: 0 14px;
 		margin-right: 2px;
@@ -291,7 +297,7 @@ a {
 	color: white;
 	height: 80px;
 	width: auto;	
-	margin: 9px 0 0 0;
+	margin: 12px 0 0 0;
 	
 	img {
 		margin: 0;
@@ -319,7 +325,7 @@ a {
     
     span {
     	display: inline-block;
-    	line-height: 0.6;
+    	line-height: 0.8;
     	vertical-align: middle;
     	font-size: 30px;
     	font-weight: 700;
@@ -383,7 +389,6 @@ nav {
 	    display: block;
 	    padding: 0;
 	    font-size: 22px;
-	    font-weight: 700;
 	    line-height: 104px;
 	    color: white;
 	    
@@ -463,7 +468,7 @@ nav {
 
 #home-contain {
 	width: 80%;
-	margin: 23px auto;
+	margin: 50px auto;
 }
 
 .feature {
@@ -471,84 +476,52 @@ nav {
 	height: 500px;
 	position: relative;
 	background-size: cover;
-	background-position: center center;
+	background-position: right bottom;
 	
 	div {
-		width: 100%;
-		text-align: center;
+		width: 60%;
+		margin: auto;
 	}
 	
-	h2 {
+	h1 {
+		text-transform: none;
 		color: white;
-		font-size: 36px;
-		line-height: 1.1;
-		padding: 18px;
-		background-color: rgba(33,55,110,0.8);
+		font-size: 46px;
+		line-height: 1.3;
+		padding-top: 1.3em;
+		font-weight: 400;
 	}
 	
 	p {
-		color: rgba(85,85,85,1);
-		font-size: 16px;
-		line-height: 1.2;
-		text-align: left;
-		display: block;
-		position: absolute;
-		bottom: 23px;
-		margin: 0;
-		width: 33%;
-		background-color: rgba(255,255,255,0.8);
-		padding: 16px;
-		
-		transform: translateX(0);
-		animation: paraFadeIn 3s 1 ease-in;
-		
-		
+		margin-top: 30px;
 	}
 	
 	a {
-	    color: rgba(33,55,110,1);
-	    font-weight: 700;
-	    display: inline-block;
-		padding-top: 10px;
-	    animation: 5s linkFadeIn ease-in;
-	    
+		display: inline-block;
+	    color: white;
+	    font-size: 22px;
+	    font-family: $titlefont;
+	    text-align: center;
+	    font-weight: 400;
+	    width: 200px;
+		padding: 18px 30px;
+		background-color: rgba($blue, 0.7);
+		transition: background 0.3s;
+		
+		&:hover {
+			text-decoration: none;
+			background-color: $blue;
+		}
+
 	    i {
 	    	font-size: 12px;
 	    }
 	}
 }
 
-@keyframes paraFadeIn {
-	0%, 50% {
-		transform: translateX(-400px);
-		color: rgba(white,0);
-		};
-	75% {
-		transform: translateX(0px);
-		color: rgba(white,0);
-		};
-	100% {
-		color: rgba($lightgrey,1);
-	};
-}
-
-@keyframes linkFadeIn {
-	0%, 90% { 
-		color: rgba(33,55,110,0);
-		border: 1px rgba(33,55,110,0) solid; 
-		background-color: rgba(white,0);
-		}
-	100% {
-		color: rgba(33,55,110,1);
-		border: 1px rgba(33,55,110,1) solid;
-		background-color: rgba(white,1);
-		}
-}
-
 .boxes {
-	width: 60%;
+	width: 54%;
 	float: left;
-	margin-top: 20px;
 	
 	h2 {
 		font-size: 36px;
@@ -609,21 +582,26 @@ nav {
 }
 
 .blog-preview {
-	margin: 15px 0;
+	margin-top: 50px;
 	
-	&:hover  article {
-		opacity: 0.5;
+	h2 {
+		margin-bottom: 25px;
 	}
 	
 	article {
 		width: 100%;
 		margin: 0;
-		padding-top: 25px;
-		opacity: 1;
-		transition: opacity 0.2s;
+		padding: 0 0 35px 0;
 		
 		&:hover {
-			opacity: 1;
+			h4 {
+				color: $lightblue;
+			}
+			
+			p::after {
+				opacity: 1;
+				transform: translateY(0);	
+			}
 		}
 		
 		a {
@@ -634,20 +612,39 @@ nav {
 			margin: 0 0 10px 0;
 			color: $blue;
 			font-family: $titlefont;
-		    font-size: 22px;
-			text-transform: uppercase;
+		    font-size: 24px;
+			font-weight: 700; 
+			transition: color 0.3s;
 		}
 		p {
 			font-size: 18px;
+			font-family: $titlefont;
 			font-weight: 400;
-			line-height: 1.45;
+			line-height: 1.3;
+			
+			&::after {
+				content: "Read More";
+				font-family: $titlefont;
+				font-size: 12px;
+				font-weight: 700;
+				color: white;
+				line-height: 1;
+				padding: 3px 7px;
+				margin-left: 10px;
+				text-transform: uppercase;
+				display: inline-block;
+				background-color: $blue;
+				border-radius: 20px;
+				opacity: 0;
+				transform: translateY(8px);
+				transition: all 0.4s;
+			}
 		}
 	}
 }
 
 aside {
 	width: 38%;
-	margin-top: 20px;
 	float: right;
 	
 	h2 {
@@ -658,13 +655,6 @@ aside {
 	ul {
 		padding: 0;
 		margin: 0;
-		
-		&:hover {
-		
-			div>i, h6, p {
-				opacity: 0.5;
-			}
-		}
 	}
 	
 	a {
@@ -673,10 +663,6 @@ aside {
 		
 		&:hover {
 			text-decoration: none;
-			
-			div>i, h6, p {
-				opacity: 1;
-			}
 		}	
 	}
 	
@@ -690,28 +676,28 @@ aside {
 	}
 	
 	div>i {
-		opacity: 1;
-		transition: opacity 0.2s ease;
 		color: $lightblue;
 	}
 		
 	li {
 		list-style-type: none;
 		margin: 0;
+		
+		&:hover h6 {
+			color: $lightblue;
+		}
 
 		h6 {
-			font-size: 18px;
-			text-transform: uppercase;
+			font-size: 24px;
 			color: $blue;
 			margin-top: 9px;
-			opacity: 1;
-			transition: opacity 0.2s ease;
+			transition: color 0.3s; 
 		}
 		
 		p {
-			font-size: 16px;
-			opacity: 1;
-			transition: opacity 0.2s ease;
+			font-size: 18px;
+			font-family: $titlefont;
+			line-height: 1.3; 
 			margin: 0;
 		}
 		
@@ -813,6 +799,7 @@ aside {
 
 .icon-fa {
 	display: block;
+	margin: 23px 0;
 	color: $lightblue;
 	text-align: center;
 }
@@ -1182,7 +1169,7 @@ and (max-width: 1366px) {
 }
 
 @media only screen 
-and (max-width: 1224px) {
+and (max-width: 1236px) {
 	.main-nav {
 		padding-left: 15px;
 		

@@ -5,23 +5,24 @@
 
 get_header(); ?>
 	
-	<div id="home-contain" class="clearfix">
-		<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_group_1.jpg);">
-			<div>
-				<?php echo get_post(6)->post_content; ?>
-			</div>
+	<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/home-hero.jpg);">
+		<div>
+			<?php echo get_post(6)->post_content; ?>
 		</div>
+	</div>
+	
+	<div id="home-contain" class="clearfix">
 		<div class="boxes clearfix">
 			<h2>Videos</h2>
-			<a href="<?php echo home_url()?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_1.jpg);">
+			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_1.jpg);">
 				<i class="fa fa-play"></i>
 				<div class="overlay"><h6>Video Title</h6></div>
 			</a>
-			<a href="<?php echo home_url()?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_2.jpg);">
+			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_2.jpg);">
 				<i class="fa fa-play"></i>
 				<div class="overlay"><h6>Video Title</h6></div>
 			</a>
-			<a href="<?php echo home_url()?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_3.jpg);">
+			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_group_1.jpg);">
 				<i class="fa fa-play"></i>
 				<div class="overlay"><h6>Video Title</h6></div>
 			</a>
@@ -38,7 +39,7 @@ get_header(); ?>
 								<?php /* the_post_thumbnail( 'news-featured-thumb', array('class' => 'attachment-full') ); */ ?>
 							
 								<h4><?php the_title();?></h4>
-								<p><?php the_post_excerpt_by_id($post->id, 250); ?></p>
+								<p><?php the_post_excerpt_by_id($post->id, 265); ?></p>
 							</a>
 						</article>
 				<?php endwhile;?>
@@ -52,7 +53,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(20,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(20); ?></h6>
-							<p><?php the_post_excerpt_by_id(20,140);?></p>
+							<p><?php the_post_excerpt_by_id(20,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -61,7 +62,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(42,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(42); ?></h6>
-							<p><?php the_post_excerpt_by_id(42,140);?></p>
+							<p><?php the_post_excerpt_by_id(42,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -70,7 +71,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(45,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(45); ?></h6>
-							<p><?php the_post_excerpt_by_id(45,140);?></p>
+							<p><?php the_post_excerpt_by_id(45,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -79,7 +80,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(47,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(47); ?></h6>
-							<p><?php the_post_excerpt_by_id(47,140);?></p>
+							<p><?php the_post_excerpt_by_id(47,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -88,7 +89,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(53,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(53); ?></h6>
-							<p><?php the_post_excerpt_by_id(53,140);?></p>
+							<p><?php the_post_excerpt_by_id(53,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -97,7 +98,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(51,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(51); ?></h6>
-							<p><?php the_post_excerpt_by_id(51,140);?></p>
+							<p><?php the_post_excerpt_by_id(51,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -106,7 +107,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(49,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(49); ?></h6>
-							<p><?php the_post_excerpt_by_id(49,140);?></p>
+							<p><?php the_post_excerpt_by_id(49,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -115,7 +116,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(55,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(55); ?></h6>
-							<p><?php the_post_excerpt_by_id(55,140);?></p>
+							<p><?php the_post_excerpt_by_id(55,125);?></p>
 						</div>
 					</a>
 				</li>
@@ -124,7 +125,7 @@ get_header(); ?>
 						<?php the_page_fa_icon(57,'2x'); ?>
 						<div>
 							<h6><?php echo get_the_title(57); ?></h6>
-							<p><?php the_post_excerpt_by_id(57,140);?></p>
+							<p><?php the_post_excerpt_by_id(57,125);?></p>
 						</div>
 					</a>
 				</li>
