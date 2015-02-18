@@ -58,11 +58,11 @@ get_header()?>
 							    </div>
 							
 							    <div class="entry">	
-							    	<?php if ( has_post_thumbnail() ) {?>
+							    	<?php if ( has_post_thumbnail() ) { ?>
 							    		<?php the_post_thumbnail('large'); ?>
-							    		<?}else{?>
+							    		<?php }else{ ?>
 							    			<hr>
-							    		<?}?>
+							    		<?php }?>
 							    	<?php the_excerpt(); ?>
 							    </div>
 							</div>

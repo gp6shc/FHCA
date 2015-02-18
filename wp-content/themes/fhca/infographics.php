@@ -27,7 +27,7 @@ get_header(); ?>
 				
 					<div class="side-hero" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/noise.png); background-size: contain; background-color: #e9e3d3; opacity: 1;"></div>
 				
-				<?}?>
+				<?php }?>
 				
 			<?php endwhile; // end of the loop. ?>
 			

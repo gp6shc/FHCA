@@ -306,8 +306,8 @@ function the_page_fa_icon($pageID,$XX) {
 		    	<div class="fa-stack fa-<?php echo $XX ?>">	
 		    		<i class="fa fa-cube fa-stack-1x"></i>
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
-		    	</div>	
-	<?}
+		    	</div>   
+	<?php }
 }		
 
 if ( ! function_exists( 'fhca_paging_nav' ) ) :
