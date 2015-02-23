@@ -8,7 +8,7 @@
 get_header(); ?>
 
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area videos">
 		
 		<main id="main" class="site-main clearfix" role="main">
 	
