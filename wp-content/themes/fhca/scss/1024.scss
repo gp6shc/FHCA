@@ -53,6 +53,14 @@ nav {
 #home-contain {
 	width: 92%;
 	margin: 50px auto;
+	
+	aside div+div {
+		width: calc(100% - 2.4em);
+	}
+	
+	.fa-stack {
+		font-size: 1em;
+	}
 }
 
 .feature {
@@ -67,6 +75,11 @@ nav {
 		padding-top: 0.8em;
 		
 	}
+}
+.box .overlay h6 {
+	transform: none;
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 .side-nav {

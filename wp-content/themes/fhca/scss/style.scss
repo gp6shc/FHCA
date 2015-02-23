@@ -1226,6 +1226,20 @@ and (max-width: 850px) {
 }
 
 @media only screen 
+and (max-width: 835px) {
+	#home-contain {
+		
+		aside div+div {
+			width: calc(100% - 2.4em);
+		}
+		
+		.fa-stack {
+			font-size: 1em;
+		}
+	}
+}
+
+@media only screen 
 and (max-width: 768px) {
 	@import '768';
 }
@@ -1233,6 +1247,18 @@ and (max-width: 768px) {
 @media only screen 
 and (max-width: 720px) {
 	@import '720';
+}
+
+@media only screen 
+and (max-width: 600px) {
+	.feature {
+		height: 250px;
+		background-position: left center;
+		
+		h1 {
+			text-align: center;
+		}
+	}
 }
 
 @media only screen 
