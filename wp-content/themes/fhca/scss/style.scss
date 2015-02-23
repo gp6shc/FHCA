@@ -556,25 +556,24 @@ nav {
 	    position: absolute;
 		bottom: 0;
 		width: 100%;
-		height: 23%;
 	    z-index: 2;
-	    background-color: rgba(white,0.8);
-	    transform: translateY(100%);
-	    transition: transform 0.3s;
 	    
 	    h6 {
 		    position: absolute;
 		    bottom: 0;
-		    left: 50%;
+		    width: 96%;
+		    padding: 2%;
+		    margin: 0;
+			background-color: rgba(white,0.8);
 			color: $blue;
 		    font-size: 22px;
-			text-transform: uppercase;
-		    transform: translateX(-50%);
+			transform: translateY(100%);
+			transition: transform 0.3s;
 	    }
     }
     
     &:hover {
-	    .overlay {
+	    .overlay h6   {
 	    	transform: translateY(0);
 	    }
 
@@ -930,6 +929,20 @@ aside {
 		i {
 			font-size: 16px;
 		}
+	}
+}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+	
+	iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
 

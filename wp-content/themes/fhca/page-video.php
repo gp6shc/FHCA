@@ -14,19 +14,49 @@ get_header(); ?>
 	
 			<?php while ( have_posts() ) : the_post(); ?>
 				
-				<?php get_template_part( 'content', 'page' ); ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
-				<div class="side-hero" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/noise.png); background-size: contain; background-color: #e9e3d3; opacity: 1;"></div>
-		
+					<div class="entry-content">
+						
+						<div class="title">
+							<h1><?php echo get_the_title(); ?></h1>
+						</div>
+						
+						<div class="icon-fa">
+							<?php the_page_fa_icon( get_the_ID(),'4x' ); ?>
+						</div>
+						
+						<?php 
+							if (isset($_GET["video"])) {
+								$videoNumber = htmlspecialchars($_GET["video"]);
+							}
+						?>
+						<div id="contain">
+							<h3 id="video-1">Florida's High-Quality Skilled Nursing Centers</h3>
+							<div class="video-wrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/SNDZGQipP4M?rel=0&showinfo=0&autohide=1<?php echo($videoNumber == 1 ? "&autoplay=1" :"") ?>" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<hr/>
+							<h3 id="video-2">State-of-the-Art Rehab in Florida's Skilled Nursing Centers</h3>
+							<div class="video-wrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/vDg_hTzBYco?rel=0&showinfo=0&autohide=1<?php echo($videoNumber == 2 ? "&autoplay=1" :"") ?>" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<hr/>
+							<h3 id="video-3">Caring for Individuals with Alzheimer's Disease or Dementia</h3>
+							<div class="video-wrapper">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/v38rwVeNFXY?rel=0&showinfo=0&autohide=1<?php echo($videoNumber == 3 ? "&autoplay=1" :"") ?>" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<?php the_content(); ?>
+						</div>
+					</div><!-- .entry-content -->
+
+					<div class="entry-footer">
+						<?php edit_post_link( __( 'Edit', 'fhca' ), '<span class="edit-link">', '</span>' ); ?>
+					</div><!-- .entry-footer -->
+				</article><!-- #post-## -->
+				
 			<?php endwhile; // end of the loop. ?>
-			
-			<div class="side-nav">
-				<ul>
-					<li><a href="#video-1">One</a></li>
-					<li><a href="#video-2">Two</a></li>
-					<li><a href="#video-3">Three</a></li>
-				</ul>
-			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

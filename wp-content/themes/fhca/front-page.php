@@ -14,17 +14,17 @@ get_header(); ?>
 	<div id="home-contain" class="clearfix">
 		<div class="boxes clearfix">
 			<h2>Videos</h2>
-			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_1.jpg);">
+			<a href="<?php echo home_url('/videos/?video=1#video-1')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/high-quality-nursing_poster.jpg);">
 				<i class="fa fa-play"></i>
-				<div class="overlay"><h6>Video Title</h6></div>
+				<div class="overlay"><h6>Florida's High-Quality Skilled Nursing Centers</h6></div>
 			</a>
-			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/FHCA_Homepage_2.jpg);">
+			<a href="<?php echo home_url('/videos/?video=2#video-2')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/state-of-the-art-rehab_poster.jpg);">
 				<i class="fa fa-play"></i>
-				<div class="overlay"><h6>Video Title</h6></div>
+				<div class="overlay"><h6>State-of-the-Art Rehab in Florida's Skilled Nursing Centers</h6></div>
 			</a>
-			<a href="<?php echo home_url('/videos')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/fhca_elderly_group_1.jpg);">
+			<a href="<?php echo home_url('/videos/?video=3#video-3')?>" class="box" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/caring-for-dementia_poster.jpg);">
 				<i class="fa fa-play"></i>
-				<div class="overlay"><h6>Video Title</h6></div>
+				<div class="overlay"><h6>Caring for Individuals with Alzheimer's Disease or Dementia</h6></div>
 			</a>
 			
 			<div class="blog-preview">
