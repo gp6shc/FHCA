@@ -1,73 +1,10 @@
-#nav-bar {
-	overflow: hidden;
-	
-}
-
-//======== MENU BUTTON STYLE ========//
-
-#menu-button {
-	display: block;
-	float: right;
-	position: relative;
-	opacity: 1;
-	width: 30px;
-	height: 104px;
-	
-	
-	i {
-		color: white;
-		vertical-align: middle;
-		line-height: 104px;
-		transition: opacity 0.2s ease;
-		padding: 0;
-	}	
-}
-
-.hidden {
-	opacity: 0;
-}
-
-nav {
-	float: none;
-	height: auto;
-	
-}
-
-.main-nav {
-	display: block;
-	float: none;
-	clear: both;
-	padding: 0;
-	text-align: right;
-	
-	li {
-		padding: 0 10px 0 0;
-		
-	}
-	
-	a {
-		line-height: 1;
-	}
-
-	+ .main-nav {
-		
-		&:before {
-			content: "";
-			display: block;
-			border: 0;
-			height: 2px;
-			margin: 10px;
-			background-image: linear-gradient( to right, rgba(255,255,255,0) 50%, rgba(255,255,255,0.6) 80%, rgba(255,255,255,0.6) 100%);
-		}
-	}
-}
-
 .slogan span {
 	font-size: 30px;
 }
 
 .home .site-content {
 	background: none;
+	background-image: linear-gradient(to bottom, white 60%, #FAF9F7 60%)
 }
 
 .feature {
@@ -101,6 +38,16 @@ aside {
 	
 	a {
 		padding: 10px 10px 10px 6.666%;
+	}
+}
+#home-contain {
+	
+	aside div+div {
+		width: calc(100% - 4.4em);
+	}
+	
+	.fa-stack {
+		font-size: 2em;
 	}
 }
 
