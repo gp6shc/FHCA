@@ -301,6 +301,12 @@ function the_page_fa_icon($pageID,$XX) {
 		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
 		    	</div>
 		<?php break;
+			case 616: ?>
+		    	<div class="fa-stack fa-<?php echo $XX ?>">	
+		    		<i class="fa fa-video-camera fa-stack-1x"></i>
+		    		<i class="fa fa-circle-thin fa-stack-2x"></i>
+		    	</div>
+		<?php break;
 		    
 		    default: ?>
 		    	<div class="fa-stack fa-<?php echo $XX ?>">	
