@@ -66,16 +66,15 @@ nav {
 .feature {
 	height: 400px;
 	
-	div {
-		width: 75%;
-	}
-	
+}
+.feature-text {
+	padding: 50px 4%;
+
 	h1 {
-		font-size: 40px;
-		padding-top: 0.8em;
-		
+		font-size: 35px;
 	}
 }
+
 .box .overlay h6 {
 	transform: none;
 	font-weight: 400;

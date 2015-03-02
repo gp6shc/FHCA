@@ -5,10 +5,9 @@
 
 get_header(); ?>
 	
-	<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/home-hero.jpg);">
-		<div>
-			<?php echo get_post(6)->post_content; ?>
-		</div>
+	<div class="feature" style="background-image: url(<?php bloginfo('stylesheet_directory')?>/img/old-ladies.jpg);"></div>
+	<div class="feature-text">
+		<?php echo get_post(6)->post_content; ?>
 	</div>
 	
 	<div id="home-contain" class="clearfix">
@@ -28,7 +27,7 @@ get_header(); ?>
 			</a>
 			
 			<div class="blog-preview">
-			<h2>Care Conversations</h2>
+			<h2>Care Conversations Blog</h2>
 				<?php $CC_query = new WP_Query( 'category_name=care-conversation&posts_per_page=3' );
 					while ( $CC_query->have_posts() ) : $CC_query->the_post();
 						$do_not_duplicate = $post->ID; ?>
