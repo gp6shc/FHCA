@@ -517,32 +517,34 @@ nav {
 	    margin-top: -40px;
 		padding: 18px 30px;
 		border: 1px solid white;
-		border-radius: 11px;
-		transition: all 0.5s linear;
+		border-radius: 12px;
+		transition: all 0.3s linear;
 		
 		&:hover {
 			text-decoration: none;
+			background-color: $lightblue;
 			border-color: $lightblue;
 			
-			&:before {
-				transform: rotate(0);
+			&:after {
+			    left: 120%;
+			    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			    transition-delay: 300ms;
 			}
 		}
 		
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: -1;
-			background-color: $lightblue;
-			width: 270px;
-			height: 70px;
-			transform: rotate(-90deg);
-			transform-origin: bottom left;
-			transition: transform 0.3s linear;
-			
-			
+		&:after {
+		    background: #fff;
+		    content: "";
+		    height: 155px;
+		    left: -95px;
+		    opacity: .25;
+		    position: absolute;
+		    top: -50px;
+		    transform: rotate(35deg);
+		    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+		    transition-delay: 0ms;
+		    width: 70px;
+		    z-index: -1;
 		}
 	}
 	
