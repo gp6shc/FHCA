@@ -12,7 +12,7 @@
 
 <meta name="keywords" content="elder care in florida, elder care florida, choosing long term care, long term care in florida, aging issues florida, elder care depression, care options, care conventions, resources for families in florida, resources for elder families, elder care resources florida, elder care conventions">
 <meta name="description" content="Choosing the right long term care facility for loved ones can be challenging. Elder Care in Florida provides resources to help families choose the best option.">
-<meta property="og:title" content="<?php the_title(); ?>">
+<meta property="og:title" content="<?php echo (is_front_page() ? "Elder Care in Florida - Resources for Families" : get_the_title() ); ?>">
 <meta property="og:url" content="<?php the_permalink(); ?>">
 <meta property="og:description" content="<?php the_content(); ?>">
 <meta property="og:image" content="http://eldercareflorida.com/wp-content/themes/fhca/img/fhca_elderly_group_1.jpg">
