@@ -56,7 +56,8 @@ get_header(); ?>
 				</article><!-- #post-## -->
 				
 			<?php endwhile; // end of the loop. ?>
-
+			
+			<?php get_sidebar()?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
