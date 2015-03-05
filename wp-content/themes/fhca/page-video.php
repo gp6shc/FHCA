@@ -19,7 +19,7 @@ get_header(); ?>
 					<div class="entry-content">
 						
 						<div class="title">
-							<h1><?php echo get_the_title(); ?></h1>
+							<h1>Videos</h1>
 						</div>
 						
 						<div class="icon-fa">
