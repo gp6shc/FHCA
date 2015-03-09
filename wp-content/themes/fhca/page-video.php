@@ -34,7 +34,7 @@ get_header(); ?>
 						<div id="contain">
 							<h3 id="video-1">Florida's High-Quality Skilled Nursing Centers</h3>
 							<div class="video-wrapper">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/SNDZGQipP4M?rel=0&showinfo=0&autohide=1<?php echo($videoNumber == 1 ? "&autoplay=1" :"") ?>" frameborder="0" allowfullscreen></iframe>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/L4ftPOuXl7I?rel=0&showinfo=0&autohide=1<?php echo($videoNumber == 1 ? "&autoplay=1" :"") ?>" frameborder="0" allowfullscreen></iframe>
 							</div>
 							<hr/>
 							<h3 id="video-2">State-of-the-Art Rehab in Florida's Skilled Nursing Centers</h3>
