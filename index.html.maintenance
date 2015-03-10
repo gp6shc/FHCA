@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Maintenence</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<style type="text/css">
+	body { 
+	  background-color: #e2e3e4;
+	}
+	
+	#wrapper {
+	  width: 100%;
+	  padding-top: 1em;
+	}
+	
+	
+	.content {
+	  width: 100%;
+	  margin: 0 auto;
+	  text-align: center;
+	}
+	
+	h1 { 
+	  font-family: 'Lato', sans-serif;
+	  font-weight: 100;
+	  font-size: 3.8em;
+	  color: #555;
+	  line-height: 1.2em;
+	}
+	
+	p { 
+	  font-family: 'Lato', sans-serif;
+	  font-size: 1.35em;
+	  font-weight: 300;
+	  color: #666;
+	  line-height: 1.4em;
+	  margin-bottom: 1.5em;
+	
+	}
+	
+	.grid {
+	  position: relative;
+	  width: 150px;
+	  height: 200px;
+	  background: #555;
+	  margin: 0 auto;
+	  padding: 1em 0;
+	  box-shadow: 0px 5px 11px -3px black
+	}
+	
+	
+	.grid .server {
+	  display: block;
+	  max-width: 72%;
+	  height: 20px;
+	  background: rgba(255,255,255,.15);
+	  box-shadow: 0 0 4.7px 0.99px black inset;
+	  margin: 10px 0 20px 30px;
+	}
+	
+	.grid .server:before {
+	  content: "";
+	  position: absolute;
+	  left: 10px;
+	  display: block;
+	  width: 10px;
+	  height: 10px;
+	  border-radius: 10px;
+	  margin-top: 5px;
+	  box-shadow: 0px 0px 11px .4px rgba(0,0,0,0.5);
+	}
+	
+	
+	/* Animation */
+	
+	@-webkit-keyframes pulse {
+	  0% {background: rgba(255,255,255,.15);}
+	  100% {background: #ff0a00;}
+	}
+	
+	.grid .server:nth-child(3):before {
+	  background: rgba(255,255,255,.15);
+	  -webkit-animation: pulse .5s infinite alternate;
+	}
+	
+	@-webkit-keyframes pulse_two {
+	  0% {background: rgba(255,255,255,.15);}
+	  100% {background: #00d800;}
+	}
+	.grid .server:nth-child(1):before {
+	  background: rgba(255,255,255,.15);
+	  -webkit-animation: pulse_two .1s infinite alternate;
+	}
+	.grid .server:nth-child(2):before {
+	  background: rgba(255,255,255,.15);
+	  -webkit-animation: pulse_two .175s infinite alternate;
+	}
+	.grid .server:nth-child(4):before {
+	  background: rgba(255,255,255,.15);
+	  -webkit-animation: pulse_two .1s infinite alternate;
+	}
+	.grid .server:nth-child(5):before {
+	  background: rgba(255,255,255,.15);
+	  -webkit-animation: pulse_two .175s infinite alternate;
+	}
+</style>
+  <div id="wrapper">
+
+    <div class="grid">
+      <span class="server"></span>
+      <span class="server"></span>
+      <span class="server"></span>
+      <span class="server"></span>
+      <span class="server"></span>
+    </div>
+
+    <div class="content">          
+      <h1>We'll be back.</h1>
+      <p>Maintenance is being performed,<br/>
+	      ElderCareFlorida.com will return soon.</p>
+    </div>
+    
+  </div>   
+</body>
+</html>

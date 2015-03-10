@@ -29,6 +29,8 @@ get_header(); ?>
 						<?php 
 							if (isset($_GET["video"])) {
 								$videoNumber = htmlspecialchars($_GET["video"]);
+							}else{
+								$videoNumber = 0;
 							}
 						?>
 						<div id="contain">
